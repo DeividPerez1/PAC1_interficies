@@ -4,10 +4,24 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_MVVM_SPA_Template.Views"
-        mc:Ignorable="d" d:DesignWidth="500.375" d:DesignHeight="283.504">
+        mc:Ignorable="d" d:DesignWidth="640.884" d:DesignHeight="456.964">
     <Grid Background="White" Margin="10">
-        <TextBox HorizontalAlignment="Left" Height="127.155" Margin="73.688,24.383,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="332.161"/>
-        <TextBlock HorizontalAlignment="Left" Height="70.905" Margin="73.688,161.728,0,0" TextWrapping="Wrap" Text="Aquesta és una aplicació de gestió de clients desenvolupada amb WPF" VerticalAlignment="Top" Width="332.161"/>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+
+            <TextBlock Text="Benvingut a iCustomer v.1.0" 
+                   FontFamily="Segoe UI Semibold" 
+                   FontSize="42" 
+                   Foreground="#2C3E50" 
+                   HorizontalAlignment="Center"
+                   Margin="0,0,0,10"/>
+
+            <TextBlock Text="Aquesta és una aplicació de gestió de clients desenvolupada amb WPF." 
+                   FontFamily="Segoe UI" 
+                   FontSize="18" 
+                   Foreground="#7F8C8D" 
+                   HorizontalAlignment="Center"/>
+
+        </StackPanel>
 
     </Grid>
 </UserControl>
