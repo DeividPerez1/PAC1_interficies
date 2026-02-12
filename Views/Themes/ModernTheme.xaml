@@ -32,6 +32,10 @@
             </Setter.Value>
         </Setter>
     </Style>
+    
+    
+    
+    
 
     <!-- Estil modern per a les etiquetes (Label) -->
     <Style x:Key="ModernLabelStyle" TargetType="Label">

@@ -4,8 +4,67 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_MVVM_SPA_Template.Views"
-        mc:Ignorable="d" Height="99.001" Width="173.977">
-    <Grid Background="White" Margin="10">
+        mc:Ignorable="d"
+        d:DesignHeight="450" d:DesignWidth="600" Background="White">
 
-    </Grid>
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Grid Margin="30,20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Content="ID:" Style="{StaticResource ModernLabelStyle}"/>
+            <TextBlock Grid.Row="0" Grid.Column="1" Text="Nou Client" VerticalAlignment="Center" 
+                       FontSize="14" FontWeight="Bold" Foreground="#1ABC9C" Margin="0,5"/>
+
+            <Label Grid.Row="1" Grid.Column="0" Content="Nom:" Style="{StaticResource ModernLabelStyle}"/>
+            <TextBox Grid.Row="1" Grid.Column="1" Style="{StaticResource ModernTextBoxStyle}"
+                     Text="{Binding NewClient.Name, UpdateSourceTrigger=PropertyChanged}"/>
+
+            <Label Grid.Row="2" Grid.Column="0" Content="Cognoms:" Style="{StaticResource ModernLabelStyle}"/>
+            <TextBox Grid.Row="2" Grid.Column="1" Style="{StaticResource ModernTextBoxStyle}"
+                     Text="{Binding NewClient.last_name, UpdateSourceTrigger=PropertyChanged}"/>
+
+            <Label Grid.Row="3" Grid.Column="0" Content="DNI:" Style="{StaticResource ModernLabelStyle}"/>
+            <TextBox Grid.Row="3" Grid.Column="1" Style="{StaticResource ModernTextBoxStyle}"
+                     Text="{Binding NewClient.DNI, UpdateSourceTrigger=PropertyChanged}"/>
+
+            <Label Grid.Row="4" Grid.Column="0" Content="Email:" Style="{StaticResource ModernLabelStyle}"/>
+            <TextBox Grid.Row="4" Grid.Column="1" Style="{StaticResource ModernTextBoxStyle}"
+                     Text="{Binding NewClient.Email, UpdateSourceTrigger=PropertyChanged}"/>
+
+            <Label Grid.Row="5" Grid.Column="0" Content="Telèfon:" Style="{StaticResource ModernLabelStyle}"/>
+            <TextBox Grid.Row="5" Grid.Column="1" Style="{StaticResource ModernTextBoxStyle}"
+                     Text="{Binding NewClient.Tlf, UpdateSourceTrigger=PropertyChanged}"/>
+
+            <Label Grid.Row="6" Grid.Column="0" Content="Data Alta:" Style="{StaticResource ModernLabelStyle}"/>
+            <DatePicker Grid.Row="6" Grid.Column="1" Style="{StaticResource ModernDatePickerStyle}"
+                        SelectedDate="{Binding NewClient.date, Mode=TwoWay}"/>
+
+            <StackPanel Grid.Row="8" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button Content="Guardar" 
+                        Command="{Binding SaveCommand}"
+                        Style="{StaticResource ModernPrimaryButtonStyle}" 
+                        Width="120"/>
+
+                <Button Content="Cancel·lar" 
+                        Command="{Binding CancelCommand}"
+                        Style="{StaticResource ModernSecundaryButtonStyle}" 
+                        Width="120"/>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
 </UserControl>
