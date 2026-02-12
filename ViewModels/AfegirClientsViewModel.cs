@@ -2,12 +2,11 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using WPF_MVVM_SPA_Template.Models;
-using System;
 
 namespace WPF_MVVM_SPA_Template.ViewModels
 {
     //Els ViewModels deriven de INotifyPropertyChanged per poder fer Binding de propietats
-    class Option1ViewModel : INotifyPropertyChanged
+    class AfegirClientsViewModel : INotifyPropertyChanged
     {
         // Referència al ViewModel principal
         private readonly MainViewModel _mainViewModel;
@@ -28,33 +27,12 @@ namespace WPF_MVVM_SPA_Template.ViewModels
         public RelayCommand AddClientCommand { get; set; }
         public RelayCommand DelClientCommand { get; set; }
         public RelayCommand VeureGraficaCommand { get; set; }
-        public Option1ViewModel(MainViewModel mainViewModel)
+        public AfegirClientsViewModel(MainViewModel mainViewModel)
         {
             _mainViewModel = mainViewModel;
-            // Carreguem estudiants a memòria mode de prova
-            Clients.Add(new Client { Id = 1,DNI = "33333", Name = "David", last_name = "juanche",Email ="pablomotos@gmail.com",Tlf = 66777,date = "05/7/26"});
-            Clients.Add(new Client { Id = 2,DNI = "44443", Name = "Pablo", last_name = "tictuc",Email ="tiktak@gmail.com",Tlf = 66777,date = "08/7/26"});
 
-            // Inicialitzem els diferents commands disponibles (accions)
-            AddClientCommand = new RelayCommand(x => _mainViewModel.AfegirClientsVM());
-            DelClientCommand = new RelayCommand(x => DelClient());
-            VeureGraficaCommand = new RelayCommand(x => VeureGrafica());
-        }
 
-        //Mètodes per afegir i eliminar estudiants de la col·lecció
-        private void AddClient()
-        {
-           
-        }
-
-        private void DelClient()
-        {
-            if (SelectedClient != null)
-                Clients.Remove(SelectedClient);
-        }
-        private void VeureGrafica()
-        {
-           
+ 
         }
 
         // Això és essencial per fer funcionar el Binding de propietats entre Vistes i ViewModels

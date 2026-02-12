@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Views\AfegirClientView.xaml" />
     <None Remove="Views\IniciView.xaml" />
   </ItemGroup>
 
@@ -62,6 +63,9 @@
 
   <ItemGroup>
     <Page Update="Views\IniciView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Views\AfegirClientView.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>

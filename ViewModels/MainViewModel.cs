@@ -12,6 +12,7 @@ namespace WPF_MVVM_SPA_Template.ViewModels
         public Option1ViewModel Option1VM { get; set; }
         public Option2ViewModel Option2VM { get; set; }
         public IniciViewModel IniciVM { get; set; }
+        public AfegirClientsViewModel AfegirClientVM { get; set; }
 
         // Propietat que conté la vista actual (és un objecte)
         private object _currentView;
@@ -50,10 +51,26 @@ namespace WPF_MVVM_SPA_Template.ViewModels
         {
             switch (SelectedView)
             {
-                case "Option1": CurrentView = new Option1View { DataContext = Option1VM }; break;
-                case "Option2": CurrentView = new Option2View { DataContext = Option2VM }; break;
-                case "Inici": CurrentView = new IniciView { DataContext = IniciVM }; break;
+                case "Option1":
+                    CurrentView = new Option1View { DataContext = Option1VM }; break;
+                case "Option2":
+                    CurrentView = new Option2View { DataContext = Option2VM }; break;
+                case "Inici":
+                    CurrentView = new IniciView { DataContext = IniciVM }; break;
+                case "afegirclient":
+                    // CORRECCIÓN: Si los otros usan 'new View', este también debe hacerlo
+                    // Asegúrate de que la clase de la vista se llame AfegirClientsView
+                    CurrentView = new AfegirClientsView { DataContext = new AfegirClientsViewModel(this) };
+                    break;
             }
+        }
+
+        public void AfegirClientsVM()
+        {
+            // Asegúrate de que esta propiedad esté declarada arriba como: 
+            // public AfegirClientsViewModel AfegirClientVM { get; set; }
+            AfegirClientVM = new AfegirClientsViewModel(this);
+            CurrentView = new AfegirClientsView { DataContext = AfegirClientVM };
         }
 
         // Això és essencial per fer funcionar el Binding de propietats entre Vistes i ViewModels
@@ -65,6 +82,7 @@ namespace WPF_MVVM_SPA_Template.ViewModels
             {
                 handler(this, new PropertyChangedEventArgs(name));
             }
+        
         }
     }
 }

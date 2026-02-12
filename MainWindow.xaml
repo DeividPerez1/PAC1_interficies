@@ -8,13 +8,13 @@
         Title="MainWindow" Height="450" Width="800">
     <DockPanel>
         <!-- Barra de navegació lateral estil SPA amb ListBox -->
-        <ListBox DockPanel.Dock="Left" Width="100" Background="#2C3E50" Foreground="White" BorderThickness="0"
+        <ListBox DockPanel.Dock="Left" Width="107.895" Background="#2C3E50" Foreground="White" BorderThickness="0"
              SelectedValue="{Binding SelectedView, Mode=TwoWay}" SelectedValuePath="Tag">
             <ListBoxItem Content="Inici" Tag="Inici" FontSize="16" Padding="10" 
                          HorizontalContentAlignment="Left" Style="{StaticResource ModernSidebarStyle}"/>
             <ListBoxItem Content="Clients" Tag="Option1" FontSize="16" Padding="10" 
                          HorizontalContentAlignment="Left" Style="{StaticResource ModernSidebarStyle}"/>
-            <ListBoxItem Content="Opció 2" Tag="Option2" FontSize="16" Padding="10" 
+            <ListBoxItem Content="Configuració" Tag="Option2" FontSize="16" Padding="10" 
                          HorizontalContentAlignment="Left" Style="{StaticResource ModernSidebarStyle}"/>
         </ListBox>
         <!-- Secció de contingut dinàmic (Grid) -->
