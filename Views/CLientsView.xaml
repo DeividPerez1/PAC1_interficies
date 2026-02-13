@@ -17,14 +17,36 @@
                   AutoGenerateColumns="False" 
                   Grid.Row="0">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="auto" />
+                <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="Auto" />
                 <DataGridTextColumn Header="DNI" Binding="{Binding DNI}" Width="50" />
                 <DataGridTextColumn Header="Nom" Binding="{Binding Name}" Width="Auto" />
                 <DataGridTextColumn Header="Cognoms" Binding="{Binding last_name}" Width="*" />
                 <DataGridTextColumn Header="Email" Binding="{Binding Email}" Width="*" />
                 <DataGridTextColumn Header="Telèfon" Binding="{Binding Tlf}" Width="Auto" />
                 <DataGridTextColumn Header="Data d'Alta" Binding="{Binding date}" Width="Auto" />
-                <DataGridTextColumn Header="Accions" Binding="{Binding Id}" Width="Auto"/>
+                <DataGridTemplateColumn Header="Accions" Width="Auto">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+
+                                <Button Background="#3498DB" Foreground="White" BorderThickness="0"
+                        Width="24" Height="24" Margin="2,0" Padding="0"
+                        Command="{Binding DataContext.EditClientCommand, RelativeSource={RelativeSource AncestorType=DataGrid}}"
+                        CommandParameter="{Binding}">
+                                    <TextBlock Text="✏️" FontSize="14" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                </Button>
+
+                                <Button Background="#E74C3C" Foreground="White" BorderThickness="0"
+                        Width="24" Height="24" Margin="2,0" Padding="0"
+                        Command="{Binding DataContext.DelClientCommand, RelativeSource={RelativeSource AncestorType=DataGrid}}"
+                        CommandParameter="{Binding}">
+                                    <TextBlock Text="❌" FontSize="10" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                </Button>
+
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
 
@@ -32,8 +54,6 @@
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Right" >
             <Button Content="Afegir Client" Command="{Binding AddClientCommand}" CommandParameter="{Binding Tag, RelativeSource={RelativeSource Self}}" Margin="5" Padding="10,5" 
                     Style="{StaticResource ModernPrimaryButtonStyle}"/>
-            <Button Content="Eliminar" Command="{Binding DelClientCommand}" IsEnabled="{Binding SelectedClient}" 
-                    Margin="5" Padding="10,5" Style="{StaticResource ModernSecundaryButtonStyle}"/>
             <Button Content="Veure Gràfica" Command="{Binding VeureGraficaCommand}" IsEnabled="{Binding SelectedClient}" 
                     Margin="5" Padding="10,5" Style="{StaticResource ModernThirdButtonStyle}"/>
         </StackPanel>

@@ -40,7 +40,7 @@ namespace WPF_MVVM_SPA_Template.ViewModels
             CancelCommand = new RelayCommand(x => _mainViewModel.SelectedView = "Option1");
 
         }
-
+         
         private void SaveClient()
         {
 
