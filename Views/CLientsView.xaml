@@ -17,7 +17,7 @@
                   AutoGenerateColumns="False" 
                   Grid.Row="0">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="Auto" />
+                <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="auto" />
                 <DataGridTextColumn Header="DNI" Binding="{Binding DNI}" Width="50" />
                 <DataGridTextColumn Header="Nom" Binding="{Binding Name}" Width="Auto" />
                 <DataGridTextColumn Header="Cognoms" Binding="{Binding last_name}" Width="*" />

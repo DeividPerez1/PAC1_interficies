@@ -15,5 +15,7 @@ namespace WPF_MVVM_SPA_Template.Models
         public string Email { get; set; }
         public int Tlf { get; set; }
         public string date { get; set; }
+
+       
     }
 }

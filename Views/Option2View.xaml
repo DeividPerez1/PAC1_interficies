@@ -11,25 +11,26 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="Seleccioneu el tema de l'aplicació:" 
+                       FontFamily="Segoe UI Semibold" 
+                       FontSize="14" 
+                       Foreground="#2C3E50" 
+                   
+                        Height="100" Width="220"/>
 
-        <TextBlock Text="Seleccioneu el tema de l'aplicació:" 
-                   FontFamily="Segoe UI Semibold" 
-                   FontSize="42" 
-                   Foreground="#2C3E50" 
-                   HorizontalAlignment="Center"
-                   Margin="0,0,0,10"/>
-
-        <Button Content="Afegir" Command="{Binding AddCourseCommand}" Margin="318.938,176.974,297.93,109.769"  HorizontalAlignment="Center " 
-           Style="{StaticResource ModernPrimaryButtonStyle}" Width="122.274" >
-            <Button.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="-0.212"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Button.RenderTransform>
-        </Button>
+            <Button Content="Aplicar Tema" Command="{Binding AddCourseCommand}"   HorizontalAlignment="Center " 
+               Style="{StaticResource ModernPrimaryButtonStyle}" Width="190" Height="50" >
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-0.212"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
+        </StackPanel>
 
     </Grid>
 </UserControl>
