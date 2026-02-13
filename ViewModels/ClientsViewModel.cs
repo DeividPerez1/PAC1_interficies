@@ -2,21 +2,18 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using WPF_MVVM_SPA_Template.Models;
-using System;
+using System.Windows; // Per al MessageBox
+using System.Windows.Input; // Per al ICommand
 
 namespace WPF_MVVM_SPA_Template.ViewModels
 {
-    //Els ViewModels deriven de INotifyPropertyChanged per poder fer Binding de propietats
-    class Option1ViewModel : INotifyPropertyChanged
+    // He canviat el nom de la classe a 'ClientsViewModel' per coincidir amb l'arxiu
+    class ClientsViewModel : INotifyPropertyChanged
     {
-        // Referència al ViewModel principal
         private readonly MainViewModel _mainViewModel;
 
-        // Col·lecció de Students (podrien carregar-se d'una base de dades)
-        // ObservableCollection és una llista que notifica els canvis a la vista
         public ObservableCollection<Client> Clients { get; set; } = new ObservableCollection<Client>();
 
-        // Propietat per controlar l'estudiant seleccionat a la vista
         private Client _selectedClient;
         public Client SelectedClient
         {
@@ -24,45 +21,76 @@ namespace WPF_MVVM_SPA_Template.ViewModels
             set { _selectedClient = value; OnPropertyChanged(); }
         }
 
-        // RelayCommands connectats via Binding als botons de la vista
+        // Comandes (Botons)
         public RelayCommand AddClientCommand { get; set; }
         public RelayCommand DelClientCommand { get; set; }
+        public RelayCommand EditClientCommand { get; set; } // <--- NOU
         public RelayCommand VeureGraficaCommand { get; set; }
-        public Option1ViewModel(MainViewModel mainViewModel)
+
+        public ClientsViewModel(MainViewModel mainViewModel)
         {
             _mainViewModel = mainViewModel;
-            // Carreguem estudiants a memòria mode de prova
-            Clients.Add(new Client { Id = 1,DNI = "33333", Name = "David", last_name = "juanche",Email ="pablomotos@gmail.com",Tlf = 66777,date = "05/7/26"});
-            Clients.Add(new Client { Id = 2,DNI = "44443", Name = "Pablo", last_name = "tictuc",Email ="tiktak@gmail.com",Tlf = 66777,date = "08/7/26"});
 
-            // Inicialitzem els diferents commands disponibles (accions)
-            AddClientCommand = new RelayCommand(x => _mainViewModel.AfegirClientsVM());
-            DelClientCommand = new RelayCommand(x => DelClient());
+            // Dades de prova inicials
+            Clients.Add(new Client { Id = 1, DNI = "33333", Name = "David", last_name = "juanche", Email = "pablomotos@gmail.com", Tlf = 66777, date = "05/7/26" });
+            Clients.Add(new Client { Id = 2, DNI = "44443", Name = "Pablo", last_name = "tictuc", Email = "tiktak@gmail.com", Tlf = 66777, date = "08/7/26" });
+
+            // --- BOTÓ AFEGIR (Verd) ---
+            AddClientCommand = new RelayCommand(x =>
+            {
+                // 1. Netejar formulari
+                _mainViewModel.AfegirClientsVM.PrepararPerAfegir();
+
+                // 2. Canviar pantalla (Assegura't que "AfegirClients" és el nom correcte al MainViewModel)
+                _mainViewModel.SelectedView = "AfegirClients";
+            });
+
+            // --- BOTÓ EDITAR (Blau) ---
+            EditClientCommand = new RelayCommand(parametre =>
+            {
+                // El paràmetre ve del DataGrid (CommandParameter)
+                if (parametre is Client clientPerEditar)
+                {
+                    // 1. Carregar dades al formulari
+                    _mainViewModel.AfegirClientsVM.CarregarClientPerEditar(clientPerEditar);
+
+                    // 2. Canviar pantalla
+                    _mainViewModel.SelectedView = "AfegirClients";
+                }
+            });
+
+            // --- BOTÓ ELIMINAR (Vermell) ---
+            DelClientCommand = new RelayCommand(parametre =>
+            {
+                // Intentem agafar el client del paràmetre (clic fila), si no, el seleccionat
+                Client clientAEliminar = parametre as Client ?? SelectedClient;
+
+                if (clientAEliminar != null)
+                {
+                    var result = MessageBox.Show($"Segur que vols eliminar a {clientAEliminar.Name}?",
+                                                 "Confirmar eliminació",
+                                                 MessageBoxButton.YesNo,
+                                                 MessageBoxImage.Warning);
+
+                    if (result == MessageBoxResult.Yes)
+                    {
+                        Clients.Remove(clientAEliminar);
+                    }
+                }
+            });
+
             VeureGraficaCommand = new RelayCommand(x => VeureGrafica());
         }
 
-        //Mètodes per afegir i eliminar estudiants de la col·lecció
-        private void AddClient()
-        {
-           
-        }
-
-        private void DelClient()
-        {
-            if (SelectedClient != null)
-                Clients.Remove(SelectedClient);
-        }
         private void VeureGrafica()
         {
-           
+            // Aquí anirà la lògica dels gràfics
         }
 
-        // Això és essencial per fer funcionar el Binding de propietats entre Vistes i ViewModels
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged([CallerMemberName] string name = null)
         {
-            PropertyChanged.Invoke(this, new PropertyChangedEventArgs(name));
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
         }
-
     }
 }

@@ -9,5 +9,15 @@ namespace WPF_MVVM_SPA_Template.Views
         {
             InitializeComponent();
         }
+
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void Fruits_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
