@@ -17,7 +17,12 @@
 
   <ItemGroup>
     <None Remove="Views\AfegirClientView.xaml" />
+    <None Remove="Views\GraficaView.xaml" />
     <None Remove="Views\IniciView.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
   </ItemGroup>
 
   <ItemGroup>
@@ -62,6 +67,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Page Update="Views\GraficaView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Update="Views\IniciView.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
