@@ -14,8 +14,10 @@ namespace WPF_MVVM_SPA_Template.ViewModels
         public Option2ViewModel Option2VM { get; set; }
         public IniciViewModel IniciVM { get; set; }
 
+
         // IMPORTANT: Li he posat el nom en Plural (Clients) perquè així és com el crides des dels altres fitxers
         public AfegirClientsViewModel AfegirClientsVM { get; set; }
+        public GraficaViewModel GraficaVM { get; set; }
 
         // --- CONTROL DE LA VISTA ---
         private object _currentView;
@@ -32,10 +34,12 @@ namespace WPF_MVVM_SPA_Template.ViewModels
             set
             {
                 _selectedView = value;
-                OnPropertyChanged();
                 ChangeView();
+                OnPropertyChanged();
+                
             }
         }
+        
 
         public MainViewModel()
         {
@@ -47,6 +51,8 @@ namespace WPF_MVVM_SPA_Template.ViewModels
 
             // Inicialitzem també el del formulari
             AfegirClientsVM = new AfegirClientsViewModel(this);
+            GraficaVM = new GraficaViewModel(this);
+
 
             // 2. VISTA INICIAL
             SelectedView = "Inici";
@@ -72,9 +78,12 @@ namespace WPF_MVVM_SPA_Template.ViewModels
 
                 // Aquest cas ha de coincidir amb el string que has posat als botons ("AfegirClients")
                 case "AfegirClients":
-                    // IMPORTANT: Fem servir la propietat 'AfegirClientsVM' que hem inicialitzat al constructor
-                    // Assegura't que la classe visual es diu 'AfegirClientsView' (o 'AfegirClientView')
+                    
                     CurrentView = new AfegirClientsView { DataContext = AfegirClientsVM };
+                    break;
+
+                case "Grafica":
+                    CurrentView = new GraficaView { DataContext = GraficaVM };
                     break;
             }
         }

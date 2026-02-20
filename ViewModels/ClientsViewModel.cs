@@ -24,7 +24,7 @@ namespace WPF_MVVM_SPA_Template.ViewModels
         // Comandes (Botons)
         public RelayCommand AddClientCommand { get; set; }
         public RelayCommand DelClientCommand { get; set; }
-        public RelayCommand EditClientCommand { get; set; } // <--- NOU
+        public RelayCommand EditClientCommand { get; set; } 
         public RelayCommand VeureGraficaCommand { get; set; }
 
         public ClientsViewModel(MainViewModel mainViewModel)
@@ -32,8 +32,19 @@ namespace WPF_MVVM_SPA_Template.ViewModels
             _mainViewModel = mainViewModel;
 
             // Dades de prova inicials
-            Clients.Add(new Client { Id = 1, DNI = "33333", Name = "David", last_name = "juanche", Email = "pablomotos@gmail.com", Tlf = 66777, date = "05/7/26" });
-            Clients.Add(new Client { Id = 2, DNI = "44443", Name = "Pablo", last_name = "tictuc", Email = "tiktak@gmail.com", Tlf = 66777, date = "08/7/26" });
+            Clients.Add(new Client { Id = 1, DNI = "33333",
+                            Name = "David", last_name = "juanche",
+                            Email = "pablomotos@gmail.com", Tlf = 66777,
+                            date = "05/7/26", ChartValues = new double[] { 5,15,60},
+                            ChartLabels = new string [] {"Lunes","martes","viernes"}
+            });
+
+            Clients.Add(new Client { Id = 2, DNI = "44443",
+                            Name = "Pablo", last_name = "tictuc",
+                            Email = "tiktak@gmail.com", Tlf = 66777,
+                            date = "08/7/26", ChartValues = new double[] { 10,40,25},
+                            ChartLabels = new string [] {"Lunes","martes", "viernes"}
+            });
 
             // --- BOTÓ AFEGIR (Verd) ---
             AddClientCommand = new RelayCommand(x =>
@@ -84,7 +95,14 @@ namespace WPF_MVVM_SPA_Template.ViewModels
 
         private void VeureGrafica()
         {
-            // Aquí anirà la lògica dels gràfics
+            if (SelectedClient != null)
+            {
+                _mainViewModel.SelectedView = "Grafica";
+            }
+            else
+            {
+                MessageBox.Show("Por favor, selecciona un cliente de la lista primero.");
+            }
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
