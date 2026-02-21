@@ -2,12 +2,12 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using WPF_MVVM_SPA_Template.Models;
-using System.Windows; // Per al MessageBox
-using System.Windows.Input; // Per al ICommand
+using System.Windows; 
+using System.Windows.Input; 
 
 namespace WPF_MVVM_SPA_Template.ViewModels
 {
-    // He canviat el nom de la classe a 'ClientsViewModel' per coincidir amb l'arxiu
+    
     public class ClientsViewModel : INotifyPropertyChanged
     {
         private readonly MainViewModel _mainViewModel;
@@ -21,7 +21,7 @@ namespace WPF_MVVM_SPA_Template.ViewModels
             set { _selectedClient = value; OnPropertyChanged(); }
         }
 
-        // Comandes (Botons)
+        
         public RelayCommand AddClientCommand { get; set; }
         public RelayCommand DelClientCommand { get; set; }
         public RelayCommand EditClientCommand { get; set; } 
@@ -46,26 +46,26 @@ namespace WPF_MVVM_SPA_Template.ViewModels
                             ChartLabels = new string [] {"Lunes","martes", "viernes"}
             });
 
-            // --- BOTÓ AFEGIR (Verd) ---
+        
             AddClientCommand = new RelayCommand(x =>
             {
-                // 1. Netejar formulari
+           
                 _mainViewModel.AfegirClientsVM.PrepararPerAfegir();
 
-                // 2. Canviar pantalla (Assegura't que "AfegirClients" és el nom correcte al MainViewModel)
+               
                 _mainViewModel.SelectedView = "AfegirClients";
             });
 
             // --- BOTÓ EDITAR (Blau) ---
             EditClientCommand = new RelayCommand(parametre =>
             {
-                // El paràmetre ve del DataGrid (CommandParameter)
+              
                 if (parametre is Client clientPerEditar)
                 {
-                    // 1. Carregar dades al formulari
+                   
                     _mainViewModel.AfegirClientsVM.CarregarClientPerEditar(clientPerEditar);
 
-                    // 2. Canviar pantalla
+
                     _mainViewModel.SelectedView = "AfegirClients";
                 }
             });
@@ -73,7 +73,7 @@ namespace WPF_MVVM_SPA_Template.ViewModels
             // --- BOTÓ ELIMINAR (Vermell) ---
             DelClientCommand = new RelayCommand(parametre =>
             {
-                // Intentem agafar el client del paràmetre (clic fila), si no, el seleccionat
+           
                 Client clientAEliminar = parametre as Client ?? SelectedClient;
 
                 if (clientAEliminar != null)

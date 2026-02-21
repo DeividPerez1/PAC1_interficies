@@ -1,8 +1,10 @@
 ﻿using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using System.Linq; // <--- IMPORTANT: Necessari per fer cerques (FirstOrDefault)
+using System.Linq; 
 using WPF_MVVM_SPA_Template.Models;
+using System;
+
 
 namespace WPF_MVVM_SPA_Template.ViewModels
 {
@@ -10,11 +12,10 @@ namespace WPF_MVVM_SPA_Template.ViewModels
     {
         private readonly MainViewModel _mainViewModel;
 
-        // Variable per saber si estem editant (true) o creant (false)
+       
         private bool _esEdicio = false;
 
-        // ObservableCollection no és necessària aquí si només editem UN client, 
-        // però la deixo per si la feies servir per alguna altra cosa.
+     
         public ObservableCollection<Client> Clients { get; set; } = new ObservableCollection<Client>();
 
         private Client _NewClient;
@@ -27,6 +28,27 @@ namespace WPF_MVVM_SPA_Template.ViewModels
         public RelayCommand SaveCommand { get; set; }
         public RelayCommand CancelCommand { get; set; }
 
+
+       
+        private Random _random = new Random();
+
+        private Tuple<double[], string[]> GenerarDatosAleatorios()
+        {
+            string[] meses = { "Gener", "Febrer", "Març", "Abril", "Maig", "Juny",
+                       "Juliol", "Agost", "Setembre", "Octubre", "Novembre", "Desembre" };
+
+            double[] valores = new double[meses.Length];
+
+            for (int i = 0; i < meses.Length; i++)
+            {
+                valores[i] = Math.Round(_random.NextDouble() * (20.0 - 2.0) + 2.0, 1);
+            }
+
+            return Tuple.Create(valores, meses);
+        }
+
+
+
         public AfegirClientsViewModel(MainViewModel mainViewModel)
         {
             _mainViewModel = mainViewModel;
@@ -34,7 +56,6 @@ namespace WPF_MVVM_SPA_Template.ViewModels
 
             SaveCommand = new RelayCommand(x => SaveClient());
 
-            // Tornar enrere (a la llista)
             CancelCommand = new RelayCommand(x => _mainViewModel.SelectedView = "Option1");
         }
 
@@ -42,7 +63,7 @@ namespace WPF_MVVM_SPA_Template.ViewModels
         public void PrepararPerAfegir()
         {
             _esEdicio = false;
-            NewClient = new Client(); // Creem un client buit
+            NewClient = new Client(); 
             OnPropertyChanged("NewClient");
         }
 
@@ -51,8 +72,7 @@ namespace WPF_MVVM_SPA_Template.ViewModels
         {
             _esEdicio = true;
 
-            // IMPORTANT: Fem una CÒPIA (Clon) de les dades.
-            // Si no ho fem així, quan escriguis al TextBox es canviarà a la taula directament.
+          
             NewClient = new Client
             {
                 Id = clientOriginal.Id,
@@ -72,7 +92,6 @@ namespace WPF_MVVM_SPA_Template.ViewModels
         {
             if (NewClient == null) return;
 
-        
             var llistaClients = _mainViewModel.Option1VM.Clients;
 
             if (_esEdicio)
@@ -82,18 +101,20 @@ namespace WPF_MVVM_SPA_Template.ViewModels
 
                 if (clientAEditar != null)
                 {
-                    // Passem les dades del formulari al client de la llista
+                   
                     clientAEditar.DNI = NewClient.DNI;
                     clientAEditar.Name = NewClient.Name;
                     clientAEditar.last_name = NewClient.last_name;
                     clientAEditar.Email = NewClient.Email;
                     clientAEditar.Tlf = NewClient.Tlf;
                     clientAEditar.date = NewClient.date;
+
+           
                 }
             }
             else
             {
-                // AFEGIR NOU: Calculem ID i afegim
+               
                 int nextId = 1;
                 if (llistaClients.Count > 0)
                 {
@@ -101,10 +122,16 @@ namespace WPF_MVVM_SPA_Template.ViewModels
                 }
 
                 NewClient.Id = nextId;
+
+                // --- AQUÍ GENERAMOS LA GRÁFICA ÚNICA PARA ESTE NUEVO CLIENTE ---
+                var datosAleatorios = GenerarDatosAleatorios();
+                NewClient.ChartValues = datosAleatorios.Item1; 
+                NewClient.ChartLabels = datosAleatorios.Item2; 
+
                 llistaClients.Add(NewClient);
             }
 
-            // Tornem a la pantalla de llista
+          
             _mainViewModel.SelectedView = "Option1";
         }
 

@@ -32,7 +32,6 @@ namespace WPF_MVVM_SPA_Template.ViewModels
 
         public ObservableCollection<string> TiposDisponibles { get; set; }
 
-        // Comandos
         public ICommand EnreraCommand { get; set; }
 
         public GraficaViewModel(MainViewModel mainViewModel)
@@ -43,7 +42,6 @@ namespace WPF_MVVM_SPA_Template.ViewModels
             TiposDisponibles = new ObservableCollection<string> { "Línies", "Barres" };
             _tipoSeleccionado = "Línies";
 
-            // Comando para volver a la lista
             EnreraCommand = new RelayCommand(x => _mainViewModel.SelectedView = "Option1");
 
          

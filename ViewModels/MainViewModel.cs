@@ -43,18 +43,17 @@ namespace WPF_MVVM_SPA_Template.ViewModels
 
         public MainViewModel()
         {
-            // 1. INICIALITZEM TOTS ELS VIEWMODELS AQUÍ
-            // Passem 'this' perquè tots puguin parlar amb el Main
-            Option1VM = new ClientsViewModel(this); // Si la teva classe encara es diu Option1ViewModel, canvia 'ClientsViewModel' per 'Option1ViewModel'
+       
+            Option1VM = new ClientsViewModel(this); 
             Option2VM = new Option2ViewModel(this);
             IniciVM = new IniciViewModel(this);
 
-            // Inicialitzem també el del formulari
+          
             AfegirClientsVM = new AfegirClientsViewModel(this);
             GraficaVM = new GraficaViewModel(this);
 
 
-            // 2. VISTA INICIAL
+        
             SelectedView = "Inici";
             ChangeView();
         }
@@ -63,8 +62,8 @@ namespace WPF_MVVM_SPA_Template.ViewModels
         {
             switch (SelectedView)
             {
-                case "Option1": // Vista de Llista
-                    // Creem la vista i li endollan el ViewModel que ja tenim creat
+                case "Option1": 
+                   
                     CurrentView = new Option1View { DataContext = Option1VM };
                     break;
 
@@ -76,7 +75,7 @@ namespace WPF_MVVM_SPA_Template.ViewModels
                     CurrentView = new IniciView { DataContext = IniciVM };
                     break;
 
-                // Aquest cas ha de coincidir amb el string que has posat als botons ("AfegirClients")
+                
                 case "AfegirClients":
                     
                     CurrentView = new AfegirClientsView { DataContext = AfegirClientsVM };
@@ -88,8 +87,6 @@ namespace WPF_MVVM_SPA_Template.ViewModels
             }
         }
 
-        // He ELIMINAT el mètode 'public void AfegirClientsVM()' perquè generava conflicte.
-        // Ara tot es fa a través de la propietat i el SelectedView.
 
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged([CallerMemberName] string name = null)
