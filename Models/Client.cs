@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WPF_MVVM_SPA_Template.Models
 {
-    class Client
+    public class Client
     {
         public int Id { get; set; }
         public string DNI { get; set; }

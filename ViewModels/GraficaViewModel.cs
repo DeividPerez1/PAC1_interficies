@@ -1,34 +1,99 @@
 ﻿using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using System.Linq; // <--- IMPORTANT: Necessari per fer cerques (FirstOrDefault)
+using System.Windows.Input;
 using WPF_MVVM_SPA_Template.Models;
+using LiveCharts;
+using LiveCharts.Wpf;
 
 namespace WPF_MVVM_SPA_Template.ViewModels
 {
-    class GraficaViewModel : INotifyPropertyChanged
+    public class GraficaViewModel : INotifyPropertyChanged
     {
         private readonly MainViewModel _mainViewModel;
+
+   
+        public SeriesCollection MisSeries { get; set; }
+        public string[] Etiquetas => _mainViewModel.Option1VM.SelectedClient?.ChartLabels ?? new string[] { "Sin datos" };
+        public string Titulo => "Facturació de " + (_mainViewModel.Option1VM.SelectedClient?.Name ?? "Client");
+
+        // Lógica para cambiar el tipo
+        private string _tipoSeleccionado;
+        public string TipoSeleccionado
+        {
+            get { return _tipoSeleccionado; }
+            set
+            {
+                _tipoSeleccionado = value;
+                OnPropertyChanged();
+                ActualizarGrafica(); 
+            }
+        }
+
+        public ObservableCollection<string> TiposDisponibles { get; set; }
+
+        // Comandos
+        public ICommand EnreraCommand { get; set; }
+
         public GraficaViewModel(MainViewModel mainViewModel)
         {
             _mainViewModel = mainViewModel;
 
+            
+            TiposDisponibles = new ObservableCollection<string> { "Línies", "Barres" };
+            _tipoSeleccionado = "Línies";
+
+            // Comando para volver a la lista
+            EnreraCommand = new RelayCommand(x => _mainViewModel.SelectedView = "Option1");
+
+         
             _mainViewModel.PropertyChanged += (s, e) =>
             {
                 if (e.PropertyName == "SelectedView" && _mainViewModel.SelectedView == "Grafica")
                 {
-                    OnPropertyChanged(nameof(Valores));
-                    OnPropertyChanged(nameof(Etiquetas));
+                    ActualizarGrafica();
                     OnPropertyChanged(nameof(Titulo));
-
+                    OnPropertyChanged(nameof(Etiquetas));
                 }
             };
         }
-        public double[] Valores => _mainViewModel.Option1VM.SelectedClient?.ChartValues ?? new double[] { 0 };
-        public string[] Etiquetas => _mainViewModel.Option1VM.SelectedClient?.ChartLabels ?? new string[] { "N/A" };
-        public string Titulo => "Gráfica de " + (_mainViewModel.Option1VM.SelectedClient?.Name ?? "Sin nombre");
 
-        // Això és essencial per fer funcionar el Binding de propietats entre Vistes i ViewModels
+        private void ActualizarGrafica()
+        {
+            var cliente = _mainViewModel.Option1VM.SelectedClient;
+            if (cliente == null || cliente.ChartValues == null) return;
+
+            var valores = new ChartValues<double>(cliente.ChartValues);
+
+            
+            if (TipoSeleccionado == "Línies")
+            {
+                MisSeries = new SeriesCollection
+                {
+                    new LineSeries
+                    {
+                        Title = "Facturació (m€)",
+                        Values = valores,
+                        PointGeometrySize = 10,
+                        AreaLimit = 0 
+                    }
+                };
+            }
+            else
+            {
+                MisSeries = new SeriesCollection
+                {
+                    new ColumnSeries
+                    {
+                        Title = "Facturació (m€)",
+                        Values = valores
+                    }
+                };
+            }
+
+            OnPropertyChanged(nameof(MisSeries));
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
         protected void OnPropertyChanged([CallerMemberName] string name = null)
         {

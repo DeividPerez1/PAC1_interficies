@@ -6,7 +6,7 @@ using WPF_MVVM_SPA_Template.Models;
 
 namespace WPF_MVVM_SPA_Template.ViewModels
 {
-    class AfegirClientsViewModel : INotifyPropertyChanged
+    public class AfegirClientsViewModel : INotifyPropertyChanged
     {
         private readonly MainViewModel _mainViewModel;
 

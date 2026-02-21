@@ -1,11 +1,45 @@
 ﻿<UserControl x:Class="WPF_MVVM_SPA_Template.Views.GraficaView"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WPF_MVVM_SPA_Template.Views"
-        mc:Ignorable="d"
-        d:DesignHeight="450" d:DesignWidth="600" Background="White">
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+             mc:Ignorable="d"
+             d:DesignHeight="450" d:DesignWidth="600" Background="White">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
 
-    
+        <DockPanel Grid.Row="0" LastChildFill="False" Margin="0,0,0,20">
+            <TextBlock Text="{Binding Titulo}" FontSize="20" FontWeight="Bold" VerticalAlignment="Center"/>
+            <Button Content="Enrera" 
+                    Command="{Binding EnreraCommand}"
+                    Background="#E74C3C" Foreground="White" 
+                    Padding="20,10" BorderThickness="0"
+                    DockPanel.Dock="Right"/>
+        </DockPanel>
+
+        <lvc:CartesianChart Grid.Row="1" Series="{Binding MisSeries}" LegendLocation="None">
+            <lvc:CartesianChart.AxisX>
+                <lvc:Axis Title="Mes" Labels="{Binding Etiquetas}">
+                    <lvc:Axis.Separator>
+                        <lvc:Separator Step="1" IsEnabled="False"/>
+                    </lvc:Axis.Separator>
+                </lvc:Axis>
+            </lvc:CartesianChart.AxisX>
+            <lvc:CartesianChart.AxisY>
+                <lvc:Axis Title="Facturació (m€)"/>
+            </lvc:CartesianChart.AxisY>
+        </lvc:CartesianChart>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
+            <TextBlock Text="Tipus de gràfic: " VerticalAlignment="Center" Margin="0,0,10,0"/>
+            <ComboBox ItemsSource="{Binding TiposDisponibles}" 
+                      SelectedItem="{Binding TipoSeleccionado}" 
+                      Width="150" Padding="5"/>
+        </StackPanel>
+    </Grid>
 </UserControl>

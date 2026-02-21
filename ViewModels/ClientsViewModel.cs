@@ -8,7 +8,7 @@ using System.Windows.Input; // Per al ICommand
 namespace WPF_MVVM_SPA_Template.ViewModels
 {
     // He canviat el nom de la classe a 'ClientsViewModel' per coincidir amb l'arxiu
-    class ClientsViewModel : INotifyPropertyChanged
+    public class ClientsViewModel : INotifyPropertyChanged
     {
         private readonly MainViewModel _mainViewModel;
 

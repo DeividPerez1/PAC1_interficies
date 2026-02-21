@@ -4,7 +4,7 @@ using WPF_MVVM_SPA_Template.Views;
 
 namespace WPF_MVVM_SPA_Template.ViewModels
 {
-    class MainViewModel : INotifyPropertyChanged
+    public class MainViewModel : INotifyPropertyChanged
     {
         // --- PROPIETATS DELS VIEWMODELS ---
 

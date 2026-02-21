@@ -6,7 +6,7 @@ using WPF_MVVM_SPA_Template.Models;
 namespace WPF_MVVM_SPA_Template.ViewModels
 {
     //Els ViewModels deriven de INotifyPropertyChanged per poder fer Binding de propietats
-    class IniciViewModel : INotifyPropertyChanged
+    public class IniciViewModel : INotifyPropertyChanged
     {
         // Referència al ViewModel principal
         private readonly MainViewModel _mainViewModel;
