@@ -11,21 +11,15 @@ namespace WPF_MVVM_SPA_Template.ViewModels
     {
         // --- PROPIETATS DELS VIEWMODELS ---
 
-        // Assegura't que Option1VM és del tipus ClientsViewModel (o Option1ViewModel segons com li diguis a la classe)
         public ClientsViewModel Option1VM { get; set; }
 
        
         public IniciViewModel IniciVM { get; set; }
 
 
-        // IMPORTANT: Li he posat el nom en Plural (Clients) perquè així és com el crides des dels altres fitxers
         public AfegirClientsViewModel AfegirClientsVM { get; set; }
         public GraficaViewModel GraficaVM { get; set; }
-
-        // Necessitem declarar la Ruleta aquí perquè l'app la reconegui
         public RuletaViewModel RuletaVM { get; set; }
-
-        // La llista de clients SEMPRE es declara aquí dalt
         public ObservableCollection<Client> Clients { get; set; }
 
         // --- CONTROL DE LA VISTA ---
@@ -56,9 +50,9 @@ namespace WPF_MVVM_SPA_Template.ViewModels
             
             
 
-            Clients = XmlService.Carregar();    // CARREGUEM L'XML: Només engegar, cridem al teu servei per llegir el disc dur
+            Clients = XmlService.Carregar();   
            
-            RuletaVM = new RuletaViewModel(this);// Inicialitzem la ruleta i li passem "this" perquè pugui veure els clients
+            RuletaVM = new RuletaViewModel(this);
 
             Option1VM = new ClientsViewModel(this); 
             
@@ -97,7 +91,7 @@ namespace WPF_MVVM_SPA_Template.ViewModels
                     CurrentView = new GraficaView { DataContext = GraficaVM };
                     break;
 
-                case "Ruleta": // AFEGIR EL CAS DE LA RULETA
+                case "Ruleta": 
                     CurrentView = new RuletaView {DataContext = RuletaVM };
                     break;
             }

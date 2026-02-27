@@ -65,7 +65,6 @@ namespace WPF_MVVM_SPA_Template.ViewModels
                 if (NewClient != null)
                 {
                     NewClient.Premi = "";
-                    // Important avisar a la pantalla perquè el text canviï a "Cap"
                     OnPropertyChanged("NewClient");
                 }
             });
@@ -116,10 +115,10 @@ namespace WPF_MVVM_SPA_Template.ViewModels
                 string.IsNullOrWhiteSpace(NewClient.DNI))
             {
                 System.Windows.MessageBox.Show("Has d'omplir com a mínim el Nom i el DNI!");
-                return; // Surt sense guardar res
+                return; 
             }
 
-            // 1. SEMPRE fem servir la llista del Main
+
             var llistaGlobal = _mainViewModel.Clients;
             if (!string.IsNullOrEmpty(NewClient.date) && NewClient.date.Contains(" "))
             {
@@ -131,7 +130,7 @@ namespace WPF_MVVM_SPA_Template.ViewModels
                 if (clientAEditar != null)
                 {
                     clientAEditar.DNI = NewClient.DNI;
-                    clientAEditar.Name = NewClient.Name; // Recorda: Name amb majúscula!
+                    clientAEditar.Name = NewClient.Name; 
                     clientAEditar.last_name = NewClient.last_name;
                     clientAEditar.Email = NewClient.Email;
                     clientAEditar.Tlf = NewClient.Tlf;
@@ -141,14 +140,13 @@ namespace WPF_MVVM_SPA_Template.ViewModels
             }
             else
             {
-                // Lògica de la gràfica del teu amic
                 var datosAleatorios = GenerarDatosAleatorios();
                 NewClient.ChartValues = datosAleatorios.Item1;
                 NewClient.ChartLabels = datosAleatorios.Item2;
 
                 NewClient.Id = llistaGlobal.Count > 0 ? llistaGlobal.Max(c => c.Id) + 1 : 1;
 
-                // L'afegim a la llista que tothom comparteix
+            
                 llistaGlobal.Add(NewClient);
             }
 

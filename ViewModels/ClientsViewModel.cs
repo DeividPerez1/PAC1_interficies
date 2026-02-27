@@ -12,7 +12,6 @@ namespace WPF_MVVM_SPA_Template.ViewModels
     {
         private readonly MainViewModel _mainViewModel;
 
-        // Ara Clients no és una llista pròpia, és un reflex de la del Main
         public ObservableCollection<Client> Clients => _mainViewModel.Clients;
 
         private Client _selectedClient;

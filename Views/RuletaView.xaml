@@ -11,7 +11,6 @@
             <StackPanel>
                 <TextBlock Text="🎰 RULETA DE PREMIS" FontSize="24" FontWeight="Bold" 
                            Foreground="#2C3E50" HorizontalAlignment="Center" Margin="0,0,0,25"/>
-
                 <TextBlock Text="Selecciona el client:" Foreground="#7F8C8D" Margin="0,0,0,5"/>
                 <ComboBox ItemsSource="{Binding Main.Clients}" 
                           SelectedItem="{Binding ClientSeleccionat}">
@@ -26,7 +25,6 @@
                     </ComboBox.ItemTemplate>
 
                 </ComboBox>
-
                 <Border Background="#2C3E50" CornerRadius="10" Padding="20" Margin="0,0,0,25">
                     <TextBlock Text="{Binding TextAnimatPremi}" Foreground="Gold" 
                                FontSize="32" FontWeight="Bold" HorizontalAlignment="Center"/>
