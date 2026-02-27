@@ -106,6 +106,10 @@ namespace WPF_MVVM_SPA_Template.ViewModels
 
         // --- LÒGICA DE GUARDAR ---
         private void SaveClient()
+
+
+
+
         {
             if (NewClient == null ||
                 string.IsNullOrWhiteSpace(NewClient.Name) ||
@@ -117,7 +121,10 @@ namespace WPF_MVVM_SPA_Template.ViewModels
 
             // 1. SEMPRE fem servir la llista del Main
             var llistaGlobal = _mainViewModel.Clients;
-
+            if (!string.IsNullOrEmpty(NewClient.date) && NewClient.date.Contains(" "))
+            {
+                NewClient.date = NewClient.date.Split(' ')[0];
+            }
             if (_esEdicio)
             {
                 var clientAEditar = llistaGlobal.FirstOrDefault(c => c.Id == NewClient.Id);
@@ -144,6 +151,7 @@ namespace WPF_MVVM_SPA_Template.ViewModels
                 // L'afegim a la llista que tothom comparteix
                 llistaGlobal.Add(NewClient);
             }
+
 
             // 2. IMPORTANTÍSSIM: Guardar al fitxer perquè no es perdi en tancar
             WPF_MVVM_SPA_Template.Services.XmlService.Guardar(llistaGlobal);
