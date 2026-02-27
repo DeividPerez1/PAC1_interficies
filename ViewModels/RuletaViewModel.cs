@@ -10,7 +10,7 @@ namespace WPF_MVVM_SPA_Template.ViewModels
     public class RuletaViewModel : INotifyPropertyChanged
     {
         public MainViewModel Main { get; set; }
-        public Client ClientSeleccionat { get; set; } // El que triem al ComboBox
+        public Client ClientSeleccionat { get; set; } 
 
         private string _textAnimatPremi = "SORT!";
         public string TextAnimatPremi
@@ -22,7 +22,7 @@ namespace WPF_MVVM_SPA_Template.ViewModels
         public RuletaViewModel(MainViewModel main) { Main = main; }
 
   
-        // El botó de la pantalla cridarà a aquesta funció
+        
         public RelayCommand GirarCommand => new RelayCommand(async obj =>
         {
             if (ClientSeleccionat == null) return;

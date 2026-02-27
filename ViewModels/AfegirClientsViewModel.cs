@@ -151,7 +151,7 @@ namespace WPF_MVVM_SPA_Template.ViewModels
             }
 
 
-            // 2. IMPORTANTÍSSIM: Guardar al fitxer perquè no es perdi en tancar
+            // 2. IMPORTANT Guardar al fitxer perquè no es perdi en tancar
             WPF_MVVM_SPA_Template.Services.XmlService.Guardar(llistaGlobal);
 
             _mainViewModel.SelectedView = "Option1";
