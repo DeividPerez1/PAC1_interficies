@@ -12,12 +12,13 @@ namespace WPF_MVVM_SPA_Template.ViewModels
     {
         private readonly MainViewModel _mainViewModel;
 
-        public ObservableCollection<Client> Clients { get; set; } = new ObservableCollection<Client>();
+        // Ara Clients no és una llista pròpia, és un reflex de la del Main
+        public ObservableCollection<Client> Clients => _mainViewModel.Clients;
 
         private Client _selectedClient;
         public Client SelectedClient
         {
-            get { return _selectedClient; }
+            get => _selectedClient; 
             set { _selectedClient = value; OnPropertyChanged(); }
         }
 
@@ -32,6 +33,7 @@ namespace WPF_MVVM_SPA_Template.ViewModels
             _mainViewModel = mainViewModel;
 
             // Dades de prova inicials
+            /*
             Clients.Add(new Client { Id = 1, DNI = "33333",
                             Name = "David", last_name = "juanche",
                             Email = "pablomotos@gmail.com", Tlf = 66777,
@@ -45,7 +47,7 @@ namespace WPF_MVVM_SPA_Template.ViewModels
                             date = "08/7/26", ChartValues = new double[] { 10,40,25},
                             ChartLabels = new string [] {"Lunes","martes", "viernes"}
             });
-
+            */
         
             AddClientCommand = new RelayCommand(x =>
             {
@@ -87,6 +89,7 @@ namespace WPF_MVVM_SPA_Template.ViewModels
                     {
                         Clients.Remove(clientAEliminar);
                     }
+                    WPF_MVVM_SPA_Template.Services.XmlService.Guardar(_mainViewModel.Clients);
                 }
             });
 

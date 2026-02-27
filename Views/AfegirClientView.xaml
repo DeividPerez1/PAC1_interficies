@@ -17,7 +17,8 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
-                <RowDefinition Height="20"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
@@ -54,7 +55,24 @@
             <DatePicker Grid.Row="6" Grid.Column="1" Style="{StaticResource ModernDatePickerStyle}"
                         SelectedDate="{Binding NewClient.date, Mode=TwoWay}"/>
 
+            <Label Grid.Row="7" Grid.Column="0" Content="Premi:" Style="{StaticResource ModernLabelStyle}"/>
+            <DockPanel Grid.Row="7" Grid.Column="1" Margin="0,5">
+                <Button Content="Reset" 
+            Command="{Binding ResetPremiCommand}" 
+            DockPanel.Dock="Right" 
+            Width="60" 
+            Margin="10"
+            Background="#E74C3C" Foreground="White" BorderThickness="0"/>
+                <TextBox Style="{StaticResource ModernTextBoxStyle}"
+             Text="{Binding NewClient.Premi, Mode=TwoWay}"
+             IsReadOnly="True" 
+             Background="#F5F5F5" 
+             Cursor="No"/>
+            </DockPanel>
+
+            
             <StackPanel Grid.Row="8" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
+
                 <Button Content="Guardar" 
                         Command="{Binding SaveCommand}"
                         Style="{StaticResource ModernPrimaryButtonStyle}" 

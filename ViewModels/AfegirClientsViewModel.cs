@@ -1,7 +1,7 @@
 ﻿using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using System.Linq; 
+using System.Linq;
 using WPF_MVVM_SPA_Template.Models;
 using System;
 
@@ -12,11 +12,11 @@ namespace WPF_MVVM_SPA_Template.ViewModels
     {
         private readonly MainViewModel _mainViewModel;
 
-       
+
         private bool _esEdicio = false;
 
-     
-        public ObservableCollection<Client> Clients { get; set; } = new ObservableCollection<Client>();
+
+        
 
         private Client _NewClient;
         public Client NewClient
@@ -27,9 +27,11 @@ namespace WPF_MVVM_SPA_Template.ViewModels
 
         public RelayCommand SaveCommand { get; set; }
         public RelayCommand CancelCommand { get; set; }
+        public RelayCommand ResetPremiCommand { get; set; }
 
 
-       
+
+
         private Random _random = new Random();
 
         private Tuple<double[], string[]> GenerarDatosAleatorios()
@@ -57,13 +59,27 @@ namespace WPF_MVVM_SPA_Template.ViewModels
             SaveCommand = new RelayCommand(x => SaveClient());
 
             CancelCommand = new RelayCommand(x => _mainViewModel.SelectedView = "Option1");
+
+            ResetPremiCommand = new RelayCommand(obj =>
+            {
+                if (NewClient != null)
+                {
+                    NewClient.Premi = "";
+                    // Important avisar a la pantalla perquè el text canviï a "Cap"
+                    OnPropertyChanged("NewClient");
+                }
+            });
+
         }
 
-        // --- MÈTODE 1: PREPARAR PER AFEGIR (Esborra el formulari) ---
-        public void PrepararPerAfegir()
+
+
+
+            // --- MÈTODE 1: PREPARAR PER AFEGIR (Esborra el formulari) ---
+            public void PrepararPerAfegir()
         {
             _esEdicio = false;
-            NewClient = new Client(); 
+            NewClient = new Client();
             OnPropertyChanged("NewClient");
         }
 
@@ -72,7 +88,7 @@ namespace WPF_MVVM_SPA_Template.ViewModels
         {
             _esEdicio = true;
 
-          
+
             NewClient = new Client
             {
                 Id = clientOriginal.Id,
@@ -81,7 +97,8 @@ namespace WPF_MVVM_SPA_Template.ViewModels
                 last_name = clientOriginal.last_name,
                 Email = clientOriginal.Email,
                 Tlf = clientOriginal.Tlf,
-                date = clientOriginal.date
+                date = clientOriginal.date,
+                Premi =clientOriginal.Premi
             };
 
             OnPropertyChanged("NewClient");
@@ -90,48 +107,47 @@ namespace WPF_MVVM_SPA_Template.ViewModels
         // --- LÒGICA DE GUARDAR ---
         private void SaveClient()
         {
-            if (NewClient == null) return;
+            if (NewClient == null ||
+                string.IsNullOrWhiteSpace(NewClient.Name) ||
+                string.IsNullOrWhiteSpace(NewClient.DNI))
+            {
+                System.Windows.MessageBox.Show("Has d'omplir com a mínim el Nom i el DNI!");
+                return; // Surt sense guardar res
+            }
 
-            var llistaClients = _mainViewModel.Option1VM.Clients;
+            // 1. SEMPRE fem servir la llista del Main
+            var llistaGlobal = _mainViewModel.Clients;
 
             if (_esEdicio)
             {
-                // EDITAR: Busquem el client original a la llista pel seu ID
-                var clientAEditar = llistaClients.FirstOrDefault(c => c.Id == NewClient.Id);
-
+                var clientAEditar = llistaGlobal.FirstOrDefault(c => c.Id == NewClient.Id);
                 if (clientAEditar != null)
                 {
-                   
                     clientAEditar.DNI = NewClient.DNI;
-                    clientAEditar.Name = NewClient.Name;
+                    clientAEditar.Name = NewClient.Name; // Recorda: Name amb majúscula!
                     clientAEditar.last_name = NewClient.last_name;
                     clientAEditar.Email = NewClient.Email;
                     clientAEditar.Tlf = NewClient.Tlf;
                     clientAEditar.date = NewClient.date;
-
-           
+                    clientAEditar.Premi = NewClient.Premi;
                 }
             }
             else
             {
-               
-                int nextId = 1;
-                if (llistaClients.Count > 0)
-                {
-                    nextId = llistaClients.Max(c => c.Id) + 1;
-                }
-
-                NewClient.Id = nextId;
-
-                // --- AQUÍ GENERAMOS LA GRÁFICA ÚNICA PARA ESTE NUEVO CLIENTE ---
+                // Lògica de la gràfica del teu amic
                 var datosAleatorios = GenerarDatosAleatorios();
-                NewClient.ChartValues = datosAleatorios.Item1; 
-                NewClient.ChartLabels = datosAleatorios.Item2; 
+                NewClient.ChartValues = datosAleatorios.Item1;
+                NewClient.ChartLabels = datosAleatorios.Item2;
 
-                llistaClients.Add(NewClient);
+                NewClient.Id = llistaGlobal.Count > 0 ? llistaGlobal.Max(c => c.Id) + 1 : 1;
+
+                // L'afegim a la llista que tothom comparteix
+                llistaGlobal.Add(NewClient);
             }
 
-          
+            // 2. IMPORTANTÍSSIM: Guardar al fitxer perquè no es perdi en tancar
+            WPF_MVVM_SPA_Template.Services.XmlService.Guardar(llistaGlobal);
+
             _mainViewModel.SelectedView = "Option1";
         }
 

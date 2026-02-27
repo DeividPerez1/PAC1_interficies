@@ -19,6 +19,7 @@
     <None Remove="Views\AfegirClientView.xaml" />
     <None Remove="Views\GraficaView.xaml" />
     <None Remove="Views\IniciView.xaml" />
+    <None Remove="Views\RuletaView.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -41,6 +42,9 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Update="Views\RuletaView.xaml.cs">
+      <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
 
@@ -74,6 +78,9 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Update="Views\AfegirClientView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Update="Views\RuletaView.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>

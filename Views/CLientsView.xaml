@@ -24,6 +24,7 @@
                 <DataGridTextColumn Header="Email" Binding="{Binding Email}" Width="*" />
                 <DataGridTextColumn Header="Telèfon" Binding="{Binding Tlf}" Width="Auto" />
                 <DataGridTextColumn Header="Data d'Alta" Binding="{Binding date}" Width="Auto" />
+                <DataGridTextColumn Header="Premi Guanyat" Binding="{Binding Premi}" Width="Auto" />
                 <DataGridTemplateColumn Header="Accions" Width="Auto">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>

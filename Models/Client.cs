@@ -17,6 +17,8 @@ namespace WPF_MVVM_SPA_Template.Models
         public string date { get; set; }
         public double[] ChartValues { get; set; }
         public string [] ChartLabels { get; set; }
-       
+
+        public string Premi { get; set; }
+
     }
 }
