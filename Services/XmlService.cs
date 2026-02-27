@@ -1,13 +1,12 @@
 ﻿using System;
-using System.Collections.ObjectModel; // Per treballar amb llistes dinàmiques
-using System.IO;                      // Per poder llegir i escriure fitxers al disc
-using System.Xml.Serialization;       // L'eina màgica que converteix C# a XML
-using WPF_MVVM_SPA_Template.Models;   // Connectem amb la definició del "Client"
+using System.Collections.ObjectModel; 
+using System.IO;                      
+using System.Xml.Serialization;      
+using WPF_MVVM_SPA_Template.Models;   
 
 namespace WPF_MVVM_SPA_Template.Services
 {
-    // Posem 'public' perquè l'app el pugui veure i 'static' perquè no haguem 
-    // d'estar creant "versions" del servei cada vegada
+    
     public static class XmlService
     {
         // Nom del fitxer que es crearà a la carpeta del projecte
@@ -31,7 +30,7 @@ namespace WPF_MVVM_SPA_Template.Services
             }
             catch (Exception ex)
             {
-                // Si hi ha un error (ex: permisos de carpeta), ens avisa per pantalla
+                // Si hi ha un error ens avisa per pantalla
                 System.Windows.MessageBox.Show("Error al guardar l'XML: " + ex.Message);
             }
         }
@@ -40,7 +39,7 @@ namespace WPF_MVVM_SPA_Template.Services
         // Aquesta funció llegeix el fitxer XML i ens torna la llista de clients
         public static ObservableCollection<Client> Carregar()
         {
-            // Si el fitxer no existeix (la primera vegada), tornem una llista buida
+            // Si el fitxer no existeix ens torna una llista buida
             if (!File.Exists(fitxerDades)) return new ObservableCollection<Client>();
 
             try
