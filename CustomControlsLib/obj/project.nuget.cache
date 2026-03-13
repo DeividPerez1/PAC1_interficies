@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "4TuAdsc40VY=",
+  "dgSpecHash": "/ie0E9djR5o=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d'interficies\\PAC1_interficies\\CustomControlsLib\\CustomControlsLib.csproj",
+  "projectFilePath": "C:\\Users\\10059567\\Desktop\\PAC1_interficies 1\\PAC1_interficies\\PAC1_interficies-main\\CustomControlsLib\\CustomControlsLib.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Omen\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.25\\microsoft.windowsdesktop.app.ref.8.0.25.nupkg.sha512",
-    "C:\\Users\\Omen\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.25\\microsoft.netcore.app.ref.8.0.25.nupkg.sha512",
-    "C:\\Users\\Omen\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.25\\microsoft.aspnetcore.app.ref.8.0.25.nupkg.sha512"
+    "C:\\Users\\10059567\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.24\\microsoft.windowsdesktop.app.ref.8.0.24.nupkg.sha512",
+    "C:\\Users\\10059567\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.24\\microsoft.netcore.app.ref.8.0.24.nupkg.sha512",
+    "C:\\Users\\10059567\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.24\\microsoft.aspnetcore.app.ref.8.0.24.nupkg.sha512"
   ],
   "logs": []
 }

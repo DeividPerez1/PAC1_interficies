@@ -1,12 +1,103 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\10059567\\Desktop\\PAC1_interficies 1\\PAC1_interficies\\PAC1_interficies-main\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DD0FF7BE-6507-426A-8943-5031A3425C6A}|CustomControlsLib\\CustomControlsLib.csproj|c:\\users\\10059567\\desktop\\pac1_interficies 1\\pac1_interficies\\pac1_interficies-main\\customcontrolslib\\minlengthtextbox.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{DD0FF7BE-6507-426A-8943-5031A3425C6A}|CustomControlsLib\\CustomControlsLib.csproj|solutionrelative:customcontrolslib\\minlengthtextbox.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD0FF7BE-6507-426A-8943-5031A3425C6A}|CustomControlsLib\\CustomControlsLib.csproj|c:\\users\\10059567\\desktop\\pac1_interficies 1\\pac1_interficies\\pac1_interficies-main\\customcontrolslib\\minlengthtextbox.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD0FF7BE-6507-426A-8943-5031A3425C6A}|CustomControlsLib\\CustomControlsLib.csproj|solutionrelative:customcontrolslib\\minlengthtextbox.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD0FF7BE-6507-426A-8943-5031A3425C6A}|CustomControlsLib\\CustomControlsLib.csproj|c:\\users\\10059567\\desktop\\pac1_interficies 1\\pac1_interficies\\pac1_interficies-main\\customcontrolslib\\customcontrolslib.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DD0FF7BE-6507-426A-8943-5031A3425C6A}|CustomControlsLib\\CustomControlsLib.csproj|solutionrelative:customcontrolslib\\customcontrolslib.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADDF0BAE-6108-4934-ACFD-BD18FD18424D}|Proves DLL\\Proves DLL.csproj|c:\\users\\10059567\\desktop\\pac1_interficies 1\\pac1_interficies\\pac1_interficies-main\\proves dll\\proves dll.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{ADDF0BAE-6108-4934-ACFD-BD18FD18424D}|Proves DLL\\Proves DLL.csproj|solutionrelative:proves dll\\proves dll.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADDF0BAE-6108-4934-ACFD-BD18FD18424D}|Proves DLL\\Proves DLL.csproj|c:\\users\\10059567\\desktop\\pac1_interficies 1\\pac1_interficies\\pac1_interficies-main\\proves dll\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{ADDF0BAE-6108-4934-ACFD-BD18FD18424D}|Proves DLL\\Proves DLL.csproj|solutionrelative:proves dll\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Proves DLL",
+              "DocumentMoniker": "C:\\Users\\10059567\\Desktop\\PAC1_interficies 1\\PAC1_interficies\\PAC1_interficies-main\\Proves DLL\\Proves DLL.csproj",
+              "RelativeDocumentMoniker": "Proves DLL\\Proves DLL.csproj",
+              "ToolTip": "C:\\Users\\10059567\\Desktop\\PAC1_interficies 1\\PAC1_interficies\\PAC1_interficies-main\\Proves DLL\\Proves DLL.csproj",
+              "RelativeToolTip": "Proves DLL\\Proves DLL.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-13T19:30:38.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MinLengthTextBox.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\10059567\\Desktop\\PAC1_interficies 1\\PAC1_interficies\\PAC1_interficies-main\\CustomControlsLib\\MinLengthTextBox.xaml.cs",
+              "RelativeDocumentMoniker": "CustomControlsLib\\MinLengthTextBox.xaml.cs",
+              "ToolTip": "C:\\Users\\10059567\\Desktop\\PAC1_interficies 1\\PAC1_interficies\\PAC1_interficies-main\\CustomControlsLib\\MinLengthTextBox.xaml.cs",
+              "RelativeToolTip": "CustomControlsLib\\MinLengthTextBox.xaml.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAowF8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-13T19:29:52.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MinLengthTextBox.xaml",
+              "DocumentMoniker": "C:\\Users\\10059567\\Desktop\\PAC1_interficies 1\\PAC1_interficies\\PAC1_interficies-main\\CustomControlsLib\\MinLengthTextBox.xaml",
+              "RelativeDocumentMoniker": "CustomControlsLib\\MinLengthTextBox.xaml",
+              "ToolTip": "C:\\Users\\10059567\\Desktop\\PAC1_interficies 1\\PAC1_interficies\\PAC1_interficies-main\\CustomControlsLib\\MinLengthTextBox.xaml",
+              "RelativeToolTip": "CustomControlsLib\\MinLengthTextBox.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-13T19:29:48.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CustomControlsLib",
+              "DocumentMoniker": "C:\\Users\\10059567\\Desktop\\PAC1_interficies 1\\PAC1_interficies\\PAC1_interficies-main\\CustomControlsLib\\CustomControlsLib.csproj",
+              "RelativeDocumentMoniker": "CustomControlsLib\\CustomControlsLib.csproj",
+              "ToolTip": "C:\\Users\\10059567\\Desktop\\PAC1_interficies 1\\PAC1_interficies\\PAC1_interficies-main\\CustomControlsLib\\CustomControlsLib.csproj",
+              "RelativeToolTip": "CustomControlsLib\\CustomControlsLib.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-13T19:37:02.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\10059567\\Desktop\\PAC1_interficies 1\\PAC1_interficies\\PAC1_interficies-main\\Proves DLL\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Proves DLL\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\10059567\\Desktop\\PAC1_interficies 1\\PAC1_interficies\\PAC1_interficies-main\\Proves DLL\\MainWindow.xaml",
+              "RelativeToolTip": "Proves DLL\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-13T19:26:11.322Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

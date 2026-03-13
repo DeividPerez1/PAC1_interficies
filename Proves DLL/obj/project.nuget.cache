@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "CPUfZQNliX4=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\10059567\\Desktop\\PAC1_interficies 1\\PAC1_interficies\\PAC1_interficies-main\\Proves DLL\\Proves DLL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\10059567\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.24\\microsoft.windowsdesktop.app.ref.8.0.24.nupkg.sha512",
+    "C:\\Users\\10059567\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.24\\microsoft.netcore.app.ref.8.0.24.nupkg.sha512",
+    "C:\\Users\\10059567\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.24\\microsoft.aspnetcore.app.ref.8.0.24.nupkg.sha512",
+    "C:\\Users\\10059567\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.24\\microsoft.netcore.app.host.win-x64.8.0.24.nupkg.sha512"
+  ],
+  "logs": []
+}
