@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "4TuAdsc40VY=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d'interficies\\PAC1_interficies\\CustomControlsLib\\CustomControlsLib.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Omen\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.25\\microsoft.windowsdesktop.app.ref.8.0.25.nupkg.sha512",
+    "C:\\Users\\Omen\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.25\\microsoft.netcore.app.ref.8.0.25.nupkg.sha512",
+    "C:\\Users\\Omen\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.25\\microsoft.aspnetcore.app.ref.8.0.25.nupkg.sha512"
+  ],
+  "logs": []
+}
