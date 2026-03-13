@@ -23,3 +23,28 @@ C:\Users\10059567\Desktop\PAC1_interficies 1\PAC1_interficies\PAC1_interficies-m
 C:\Users\10059567\Desktop\PAC1_interficies 1\PAC1_interficies\PAC1_interficies-main\Proves DLL\obj\Debug\net8.0-windows\Proves DLL.pdb
 C:\Users\10059567\Desktop\PAC1_interficies 1\PAC1_interficies\PAC1_interficies-main\Proves DLL\obj\Debug\net8.0-windows\Proves DLL.genruntimeconfig.cache
 C:\Users\10059567\Desktop\PAC1_interficies 1\PAC1_interficies\PAC1_interficies-main\Proves DLL\obj\Debug\net8.0-windows\ref\Proves DLL.dll
+C:\Users\Omen\OneDrive - Universitat de Vic\Desenvolupament_d'interficies\PAC1_interficies\Proves DLL\bin\Debug\net8.0-windows\Proves DLL.exe
+C:\Users\Omen\OneDrive - Universitat de Vic\Desenvolupament_d'interficies\PAC1_interficies\Proves DLL\bin\Debug\net8.0-windows\Proves DLL.deps.json
+C:\Users\Omen\OneDrive - Universitat de Vic\Desenvolupament_d'interficies\PAC1_interficies\Proves DLL\bin\Debug\net8.0-windows\Proves DLL.runtimeconfig.json
+C:\Users\Omen\OneDrive - Universitat de Vic\Desenvolupament_d'interficies\PAC1_interficies\Proves DLL\bin\Debug\net8.0-windows\Proves DLL.dll
+C:\Users\Omen\OneDrive - Universitat de Vic\Desenvolupament_d'interficies\PAC1_interficies\Proves DLL\bin\Debug\net8.0-windows\Proves DLL.pdb
+C:\Users\Omen\OneDrive - Universitat de Vic\Desenvolupament_d'interficies\PAC1_interficies\Proves DLL\bin\Debug\net8.0-windows\CustomControlsLib.dll
+C:\Users\Omen\OneDrive - Universitat de Vic\Desenvolupament_d'interficies\PAC1_interficies\Proves DLL\bin\Debug\net8.0-windows\CustomControlsLib.pdb
+C:\Users\Omen\OneDrive - Universitat de Vic\Desenvolupament_d'interficies\PAC1_interficies\Proves DLL\obj\Debug\net8.0-windows\Proves DLL.csproj.AssemblyReference.cache
+C:\Users\Omen\OneDrive - Universitat de Vic\Desenvolupament_d'interficies\PAC1_interficies\Proves DLL\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Omen\OneDrive - Universitat de Vic\Desenvolupament_d'interficies\PAC1_interficies\Proves DLL\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Omen\OneDrive - Universitat de Vic\Desenvolupament_d'interficies\PAC1_interficies\Proves DLL\obj\Debug\net8.0-windows\Proves DLL_MarkupCompile.cache
+C:\Users\Omen\OneDrive - Universitat de Vic\Desenvolupament_d'interficies\PAC1_interficies\Proves DLL\obj\Debug\net8.0-windows\Proves DLL_MarkupCompile.lref
+C:\Users\Omen\OneDrive - Universitat de Vic\Desenvolupament_d'interficies\PAC1_interficies\Proves DLL\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\Omen\OneDrive - Universitat de Vic\Desenvolupament_d'interficies\PAC1_interficies\Proves DLL\obj\Debug\net8.0-windows\Proves DLL.g.resources
+C:\Users\Omen\OneDrive - Universitat de Vic\Desenvolupament_d'interficies\PAC1_interficies\Proves DLL\obj\Debug\net8.0-windows\Proves DLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Omen\OneDrive - Universitat de Vic\Desenvolupament_d'interficies\PAC1_interficies\Proves DLL\obj\Debug\net8.0-windows\Proves DLL.AssemblyInfoInputs.cache
+C:\Users\Omen\OneDrive - Universitat de Vic\Desenvolupament_d'interficies\PAC1_interficies\Proves DLL\obj\Debug\net8.0-windows\Proves DLL.AssemblyInfo.cs
+C:\Users\Omen\OneDrive - Universitat de Vic\Desenvolupament_d'interficies\PAC1_interficies\Proves DLL\obj\Debug\net8.0-windows\Proves DLL.csproj.CoreCompileInputs.cache
+C:\Users\Omen\OneDrive - Universitat de Vic\Desenvolupament_d'interficies\PAC1_interficies\Proves DLL\obj\Debug\net8.0-windows\Proves DLL.sourcelink.json
+C:\Users\Omen\OneDrive - Universitat de Vic\Desenvolupament_d'interficies\PAC1_interficies\Proves DLL\obj\Debug\net8.0-windows\Proves DLL.csproj.Up2Date
+C:\Users\Omen\OneDrive - Universitat de Vic\Desenvolupament_d'interficies\PAC1_interficies\Proves DLL\obj\Debug\net8.0-windows\Proves DLL.dll
+C:\Users\Omen\OneDrive - Universitat de Vic\Desenvolupament_d'interficies\PAC1_interficies\Proves DLL\obj\Debug\net8.0-windows\refint\Proves DLL.dll
+C:\Users\Omen\OneDrive - Universitat de Vic\Desenvolupament_d'interficies\PAC1_interficies\Proves DLL\obj\Debug\net8.0-windows\Proves DLL.pdb
+C:\Users\Omen\OneDrive - Universitat de Vic\Desenvolupament_d'interficies\PAC1_interficies\Proves DLL\obj\Debug\net8.0-windows\Proves DLL.genruntimeconfig.cache
+C:\Users\Omen\OneDrive - Universitat de Vic\Desenvolupament_d'interficies\PAC1_interficies\Proves DLL\obj\Debug\net8.0-windows\ref\Proves DLL.dll

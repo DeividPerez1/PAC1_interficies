@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\10059567\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\10059567\\.nuget\\packages"
+      "C:\\Users\\Omen\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Omen\\.nuget\\packages"
     ],
     "configProperties": {
       "CSWINRT_USE_WINDOWS_UI_XAML_PROJECTIONS": false,
