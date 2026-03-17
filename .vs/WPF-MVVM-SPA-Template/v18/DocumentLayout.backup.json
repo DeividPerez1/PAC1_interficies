@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{ADDF0BAE-6108-4934-ACFD-BD18FD18424D}|Proves DLL\\Proves DLL.csproj|solutionrelative:proves dll\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{DD0FF7BE-6507-426A-8943-5031A3425C6A}|CustomControlsLib\\CustomControlsLib.csproj|c:\\users\\omen\\onedrive - universitat de vic\\desenvolupament_d\u0027interficies\\pac1_interficies\\customcontrolslib\\emailtextbox.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD0FF7BE-6507-426A-8943-5031A3425C6A}|CustomControlsLib\\CustomControlsLib.csproj|solutionrelative:customcontrolslib\\emailtextbox.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{ADDF0BAE-6108-4934-ACFD-BD18FD18424D}|Proves DLL\\Proves DLL.csproj|c:\\users\\omen\\onedrive - universitat de vic\\desenvolupament_d\u0027interficies\\pac1_interficies\\proves dll\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{ADDF0BAE-6108-4934-ACFD-BD18FD18424D}|Proves DLL\\Proves DLL.csproj|solutionrelative:proves dll\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
@@ -17,14 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{ADDF0BAE-6108-4934-ACFD-BD18FD18424D}|Proves DLL\\Proves DLL.csproj|c:\\users\\omen\\onedrive - universitat de vic\\desenvolupament_d\u0027interficies\\pac1_interficies\\proves dll\\proves dll.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{ADDF0BAE-6108-4934-ACFD-BD18FD18424D}|Proves DLL\\Proves DLL.csproj|solutionrelative:proves dll\\proves dll.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD0FF7BE-6507-426A-8943-5031A3425C6A}|CustomControlsLib\\CustomControlsLib.csproj|c:\\users\\omen\\onedrive - universitat de vic\\desenvolupament_d\u0027interficies\\pac1_interficies\\customcontrolslib\\emailtextbox.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD0FF7BE-6507-426A-8943-5031A3425C6A}|CustomControlsLib\\CustomControlsLib.csproj|solutionrelative:customcontrolslib\\emailtextbox.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD0FF7BE-6507-426A-8943-5031A3425C6A}|CustomControlsLib\\CustomControlsLib.csproj|c:\\users\\omen\\onedrive - universitat de vic\\desenvolupament_d\u0027interficies\\pac1_interficies\\customcontrolslib\\customcontrolslib.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{DD0FF7BE-6507-426A-8943-5031A3425C6A}|CustomControlsLib\\CustomControlsLib.csproj|solutionrelative:customcontrolslib\\customcontrolslib.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,11 +30,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\Proves DLL\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "Proves DLL\\AssemblyInfo.cs",
@@ -46,12 +42,11 @@
               "RelativeToolTip": "Proves DLL\\AssemblyInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-17T14:47:25.072Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-17T14:47:25.072Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\Proves DLL\\App.xaml",
               "RelativeDocumentMoniker": "Proves DLL\\App.xaml",
@@ -63,41 +58,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Proves DLL",
+              "DocumentIndex": 4,
+              "Title": "Proves DLL.csproj",
               "DocumentMoniker": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\Proves DLL\\Proves DLL.csproj",
               "RelativeDocumentMoniker": "Proves DLL\\Proves DLL.csproj",
               "ToolTip": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\Proves DLL\\Proves DLL.csproj",
               "RelativeToolTip": "Proves DLL\\Proves DLL.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-17T14:46:55.903Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-17T14:46:55.903Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "EmailTextBox.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\CustomControlsLib\\EmailTextBox.xaml.cs",
               "RelativeDocumentMoniker": "CustomControlsLib\\EmailTextBox.xaml.cs",
               "ToolTip": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\CustomControlsLib\\EmailTextBox.xaml.cs",
               "RelativeToolTip": "CustomControlsLib\\EmailTextBox.xaml.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAxwCUAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAYwEAAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-13T19:44:32.465Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CustomControlsLib.csproj",
-              "DocumentMoniker": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\CustomControlsLib\\CustomControlsLib.csproj",
-              "RelativeDocumentMoniker": "CustomControlsLib\\CustomControlsLib.csproj",
-              "ToolTip": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\CustomControlsLib\\CustomControlsLib.csproj",
-              "RelativeToolTip": "CustomControlsLib\\CustomControlsLib.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-13T19:37:02.211Z",
               "EditorCaption": ""
             },
             {

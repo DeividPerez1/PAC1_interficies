@@ -48,6 +48,22 @@ namespace CustomControlsLib
             var control = (EmailTextBox)d;
             string newEmail = (string)e.NewValue;
             bool isValid = IsValid(newEmail);
+            if (string.IsNullOrWhiteSpace(newEmail))
+            {
+                control.InnerTextBox.BorderBrush = SystemColors.WindowFrameBrush;
+                control.InnerTextBox.ToolTip = null;
+                return;
+            }
+            if (isValid)
+            {
+                control.InnerTextBox.BorderBrush = Brushes.Green;
+                control.InnerTextBox.ToolTip = null;
+            }
+            else
+            {
+                control.InnerTextBox.BorderBrush = Brushes.Red;
+                control.InnerTextBox.ToolTip = "El correu introduit no és valid";
+            }
         }
 
         public static bool IsValid(string email)
