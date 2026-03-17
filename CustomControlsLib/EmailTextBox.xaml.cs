@@ -22,6 +22,7 @@ namespace CustomControlsLib
     /// </summary>
     public partial class EmailTextBox : UserControl
     {
+        //Binding 
         public static readonly DependencyProperty EmailTextProperty =
             DependencyProperty.Register(
                    "EmailText",
@@ -62,6 +63,7 @@ namespace CustomControlsLib
             else
             {
                 control.InnerTextBox.BorderBrush = Brushes.Red;
+                control.InnerTextBox.BorderThickness = new Thickness(2);
                 control.InnerTextBox.ToolTip = "El correu introduit no és valid";
             }
         }
