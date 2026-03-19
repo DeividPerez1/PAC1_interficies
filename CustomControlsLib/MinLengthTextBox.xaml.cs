@@ -59,24 +59,24 @@ namespace CustomControlsLib
 
         private void Validate()
         {
-            if (ControlBorder == null) return;
+            if (InnerTextBox == null) return;
 
             if (string.IsNullOrEmpty(TextValue))
             {
-                ControlBorder.BorderBrush = Brushes.Gray;
-                ControlBorder.BorderThickness = new Thickness(1);
+                InnerTextBox.BorderBrush = Brushes.Gray;
+                InnerTextBox.BorderThickness = new Thickness(1);
                 TooltipMessage = "Camp buit";
             }
             else if (!IsValid(TextValue, MinLength))
             {
-                ControlBorder.BorderBrush = Brushes.Red;
-                ControlBorder.BorderThickness = new Thickness(2);
+                InnerTextBox.BorderBrush = Brushes.Red;
+                InnerTextBox.BorderThickness = new Thickness(2);
                 TooltipMessage = $"Error: Calen almenys {MinLength} caràcters.";
             }
             else
             {
-                ControlBorder.BorderBrush = Brushes.Green;
-                ControlBorder.BorderThickness = new Thickness(1);
+                InnerTextBox.BorderBrush = Brushes.Green;
+                InnerTextBox.BorderThickness = new Thickness(1);
                 TooltipMessage = "Longitud correcta";
             }
         }

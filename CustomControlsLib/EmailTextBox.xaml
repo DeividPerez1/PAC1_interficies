@@ -7,12 +7,9 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <Border x:Name="ControlBorder" BorderBrush="Gray" BorderThickness="1" CornerRadius="2" Padding="2">
-            <TextBox x:Name="InnerTextBox" 
-              BorderThickness="0" 
-              Background="Transparent"
+        <TextBox x:Name="InnerTextBox" 
+              Style="{DynamicResource ModernTextBoxStyle}"
               VerticalContentAlignment="Center"
               ToolTip="{Binding TooltipMessage, RelativeSource={RelativeSource AncestorType=UserControl}}" />
-        </Border>
     </Grid>
 </UserControl>

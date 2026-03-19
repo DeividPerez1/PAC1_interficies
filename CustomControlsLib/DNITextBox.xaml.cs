@@ -68,21 +68,23 @@ namespace CustomControlsLib
 
             if (string.IsNullOrWhiteSpace(newDNI))
             {
-                control.ControlBorder.BorderBrush = Brushes.Gray;
-                               
+                control.InnerTextBox.ClearValue(TextBox.BorderBrushProperty);
+                control.InnerTextBox.ClearValue(TextBox.BorderThicknessProperty);
+
             }
             else if (isValid)
             {
-                control.ControlBorder.BorderBrush = Brushes.Green;
+                control.InnerTextBox.BorderBrush = Brushes.Green;
+                control.InnerTextBox.BorderThickness = new Thickness(1);
                 control.TooltipMessage = "DNI vàlid";
-                
+
             }
             else
             {
-                control.ControlBorder.BorderBrush = Brushes.Red;
-                control.ControlBorder.BorderThickness = new Thickness(2);
-                control.TooltipMessage = "El DNI introduit no és vàlid";
-                
+                control.InnerTextBox.BorderBrush = Brushes.Red;
+                control.InnerTextBox.BorderThickness = new Thickness(2);
+                control.TooltipMessage = "El DNI introduït no és vàlid";
+
             }
         }
 
