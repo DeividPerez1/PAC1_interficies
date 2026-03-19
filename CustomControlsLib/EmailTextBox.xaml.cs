@@ -32,6 +32,22 @@ namespace CustomControlsLib
                        string.Empty,
                        FrameworkPropertyMetadataOptions.BindsTwoWayByDefault,
                        OnEmailtextChanged));
+
+        public static readonly DependencyProperty TooltipMessageProperty =
+            DependencyProperty.Register(
+                "TooltipMessage", 
+                typeof(string), 
+                typeof(EmailTextBox), 
+                new PropertyMetadata(string.Empty));
+        
+        public string TooltipMessage 
+        { 
+            get => (string)GetValue(TooltipMessageProperty); 
+            set => SetValue(TooltipMessageProperty, value); 
+        }
+
+
+
         public string EmailText
         {
             get => (string)GetValue(EmailTextProperty);
@@ -51,20 +67,23 @@ namespace CustomControlsLib
             bool isValid = IsValid(newEmail);
             if (string.IsNullOrWhiteSpace(newEmail))
             {
-                control.InnerTextBox.BorderBrush = SystemColors.WindowFrameBrush;
-                control.InnerTextBox.ToolTip = null;
+                control.ControlBorder.BorderBrush = Brushes.Gray;
+                control.TooltipMessage = "Introdueix un correu";
+                
                 return;
             }
             if (isValid)
             {
-                control.InnerTextBox.BorderBrush = Brushes.Green;
-                control.InnerTextBox.ToolTip = null;
+                control.ControlBorder.BorderBrush = Brushes.Green;
+                control.TooltipMessage = "Email vàlid";
+                
             }
             else
             {
-                control.InnerTextBox.BorderBrush = Brushes.Red;
-                control.InnerTextBox.BorderThickness = new Thickness(2);
-                control.InnerTextBox.ToolTip = "El correu introduit no és valid";
+                control.ControlBorder.BorderBrush = Brushes.Red;
+                control.ControlBorder.BorderThickness = new Thickness(2);
+                control.TooltipMessage = "El correu introduit no és valid";
+                
             }
         }
 

@@ -15,92 +15,70 @@ namespace CustomControlsLib
     {
         public static readonly DependencyProperty TextValueProperty =
             DependencyProperty.Register(
-                "TextValue",
-                 typeof(string),
-                 typeof(MinLengthTextBox),
-                 new FrameworkPropertyMetadata(
-                 string.Empty,
-                 FrameworkPropertyMetadataOptions.BindsTwoWayByDefault,
-                 OnTextValueChanged)); 
+                "TextValue", 
+                typeof(string), 
+                typeof(MinLengthTextBox),
+                new FrameworkPropertyMetadata(
+                    string.Empty, 
+                    FrameworkPropertyMetadataOptions.BindsTwoWayByDefault, 
+                    OnTextValueChanged));
 
-
-        public static readonly DependencyProperty MinLengthProperty = 
+        public static readonly DependencyProperty MinLengthProperty =
             DependencyProperty.Register(
-                "MinLength",
-                 typeof(int),
-                 typeof(MinLengthTextBox),
-                 new FrameworkPropertyMetadata(0, OnMinLengthChanged));
+                "MinLength", 
+                typeof(int), 
+                typeof(MinLengthTextBox),
+                new PropertyMetadata(0, (d, e) => ((MinLengthTextBox)d).Validate()));
 
-            public string TextValue
+        // Propietat per al Tooltip (Part opcional de la PAC)
+        public static readonly DependencyProperty TooltipMessageProperty =
+            DependencyProperty.Register(
+                "TooltipMessage", 
+                typeof(string), 
+                typeof(MinLengthTextBox), 
+                new PropertyMetadata(string.Empty));
+
+        public string TextValue { get => (string)GetValue(TextValueProperty); set => SetValue(TextValueProperty, value); }
+        public int MinLength { get => (int)GetValue(MinLengthProperty); set => SetValue(MinLengthProperty, value); }
+        public string TooltipMessage { get => (string)GetValue(TooltipMessageProperty); set => SetValue(TooltipMessageProperty, value); }
+
+        public MinLengthTextBox()
+        {
+            InitializeComponent();
+            InnerTextBox.TextChanged += (s, e) => { TextValue = InnerTextBox.Text; Validate(); };
+        }
+
+        private static void OnTextValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+        {
+            var control = (MinLengthTextBox)d;
+            if (control.InnerTextBox.Text != (string)e.NewValue) control.InnerTextBox.Text = (string)e.NewValue;
+            control.Validate();
+        }
+
+        public static bool IsValid(string text, int min) => text != null && text.Length >= min;
+
+        private void Validate()
+        {
+            if (ControlBorder == null) return;
+
+            if (string.IsNullOrEmpty(TextValue))
             {
-                get => (string)GetValue(TextValueProperty);
-                set => SetValue(TextValueProperty, value);
+                ControlBorder.BorderBrush = Brushes.Gray;
+                ControlBorder.BorderThickness = new Thickness(1);
+                TooltipMessage = "Camp buit";
             }
-
-            public int MinLength
+            else if (!IsValid(TextValue, MinLength))
             {
-                get => (int)GetValue(MinLengthProperty);
-                set => SetValue(MinLengthProperty, value);
+                ControlBorder.BorderBrush = Brushes.Red;
+                ControlBorder.BorderThickness = new Thickness(2);
+                TooltipMessage = $"Error: Calen almenys {MinLength} caràcters.";
             }
-
-          
-            public bool IsValid => TextValue != null && TextValue.Length >= MinLength;
-
-            public MinLengthTextBox()
+            else
             {
-                InitializeComponent();
-
-                
-                InternalTextBox.TextChanged += (s, e) => {
-                    TextValue = InternalTextBox.Text;
-                    Validate();
-                };
-            }
-
-            
-            private static void OnTextValueChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
-            {
-                var control = (MinLengthTextBox)d;
-                var newValue = (string)e.NewValue;
-
-                if (control != null)
-                {
-                   
-                    if (control.InternalTextBox.Text != newValue)
-                    {
-                        control.InternalTextBox.Text = newValue;
-                    }
-                    control.Validate();
-                }
-            }
-
-            private static void OnMinLengthChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
-            {
-                var control = (MinLengthTextBox)d;
-                control?.Validate();
-            }
-
-            //Validacio de si el text coincideix o no em les normatives
-            //si no coincideix es posa en vermell el requadre si no no es
-            //posa en vermell segueix en gris
-            private void Validate()
-            {
-                if (!IsValid)
-                {
-                    
-                    InternalTextBox.BorderBrush = Brushes.Red;
-                    InternalTextBox.BorderThickness = new Thickness(2);
-
-
-                   
-            }
-                else
-                {
-                    
-                    InternalTextBox.BorderBrush = Brushes.Gray;
-                    InternalTextBox.BorderThickness = new Thickness(1);
-                    InternalTextBox.Background = Brushes.White;
-            }
+                ControlBorder.BorderBrush = Brushes.Green;
+                ControlBorder.BorderThickness = new Thickness(1);
+                TooltipMessage = "Longitud correcta";
             }
         }
     }
+}

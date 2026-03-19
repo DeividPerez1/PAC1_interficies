@@ -32,6 +32,21 @@ namespace CustomControlsLib
                        string.Empty,
                        FrameworkPropertyMetadataOptions.BindsTwoWayByDefault,
                        OnDNItextChanged));
+
+        public static readonly DependencyProperty TooltipMessageProperty =
+            DependencyProperty.Register(
+                "TooltipMessage", 
+                typeof(string), 
+                typeof(DNITextBox), 
+                new PropertyMetadata(string.Empty));
+
+        
+        public string TooltipMessage 
+        { 
+            get => (string)GetValue(TooltipMessageProperty); 
+            set => SetValue(TooltipMessageProperty, value); 
+        }
+
         public string DNIText
         {
             get => (string)GetValue(DNITextProperty);
@@ -52,20 +67,23 @@ namespace CustomControlsLib
 
             if (string.IsNullOrWhiteSpace(newDNI))
             {
-                control.InnerTextBox.BorderBrush = SystemColors.WindowFrameBrush;
-                control.InnerTextBox.ToolTip = null;
+                control.ControlBorder.BorderBrush = Brushes.Gray;
+                control.TooltipMessage = "Indtrodueix un DNI";
+                
                 return;
             }
             if (isValid)
             {
-                control.InnerTextBox.BorderBrush = Brushes.Green;
-                control.InnerTextBox.ToolTip = null;
+                control.ControlBorder.BorderBrush = Brushes.Green;
+                control.TooltipMessage = "DNI vàlid";
+                
             }
             else
             {
-                control.InnerTextBox.BorderBrush = Brushes.Red;
-                control.InnerTextBox.BorderThickness = new Thickness(2);
-                control.InnerTextBox.ToolTip = "El DNI introduit no és valid";
+                control.ControlBorder.BorderBrush = Brushes.Red;
+                control.ControlBorder.BorderThickness = new Thickness(2);
+                control.TooltipMessage = "El DNI introduit no és vàlid";
+                
             }
         }
 
