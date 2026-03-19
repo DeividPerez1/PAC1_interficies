@@ -2,9 +2,9 @@
 using System.Collections.ObjectModel; 
 using System.IO;                      
 using System.Xml.Serialization;      
-using WPF_MVVM_SPA_Template.Models;   
+using Clients_Managment.Models;
 
-namespace WPF_MVVM_SPA_Template.Services
+namespace Clients_Managment.Services
 {
     
     public static class XmlService

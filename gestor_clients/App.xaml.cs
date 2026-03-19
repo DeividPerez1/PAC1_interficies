@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows;
 
-namespace WPF_MVVM_SPA_Template
+namespace Clients_Managment
 {
     /// <summary>
     /// Interaction logic for App.xaml

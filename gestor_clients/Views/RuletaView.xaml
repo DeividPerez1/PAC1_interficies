@@ -1,6 +1,7 @@
-﻿<UserControl x:Class="WPF_MVVM_SPA_Template.Views.RuletaView"
+﻿<UserControl x:Class="Clients_Managment.Views.RuletaView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Clients_Managment.Views">
 
     <Grid Background="#F0F2F5">
         <Border Background="White" CornerRadius="15" Margin="40" Padding="30" MaxWidth="500" VerticalAlignment="Center">

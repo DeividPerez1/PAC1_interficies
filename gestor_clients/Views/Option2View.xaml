@@ -3,8 +3,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WPF_MVVM_SPA_Template.Views"
-        xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="WPF_MVVM_SPA_Template.Views.Option2View"
+        xmlns:local="clr-namespace:Clients_Managment.Views"
+        xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="Clients_Managment.Views.Option2View"
         mc:Ignorable="d" d:DesignWidth="640.884" d:DesignHeight="456.964">
     <Grid Background="White" Margin="10">
         <Grid.RowDefinitions>

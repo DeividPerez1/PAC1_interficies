@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Input;
 
-namespace WPF_MVVM_SPA_Template.ViewModels
+namespace Clients_Managment.ViewModels
 {
     // Aquesta classe permet crear comandes que es poden enllaçar a elements de la interfície d'usuari
     // Permet comprovar si la comanda es pot executar (opcional) i executar-la

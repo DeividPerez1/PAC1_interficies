@@ -1,11 +1,11 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using WPF_MVVM_SPA_Template.Models;
-using WPF_MVVM_SPA_Template.Services;
+using Clients_Managment.Models;
+using Clients_Managment.Services;
 using System.Threading.Tasks;
 
-namespace WPF_MVVM_SPA_Template.ViewModels
+namespace Clients_Managment.ViewModels
 {
     public class RuletaViewModel : INotifyPropertyChanged
     {

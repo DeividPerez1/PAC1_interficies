@@ -3,20 +3,98 @@
   "WorkspaceRootPath": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{660DA19F-A55A-4FB5-90EB-132894D58E66}|gestor_clients\\WPF-MVVM-SPA-Template.csproj|c:\\users\\omen\\onedrive - universitat de vic\\desenvolupament_d\u0027interficies\\pac1_interficies\\gestor_clients\\views\\option2view.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{660DA19F-A55A-4FB5-90EB-132894D58E66}|gestor_clients\\WPF-MVVM-SPA-Template.csproj|solutionrelative:gestor_clients\\views\\option2view.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{660DA19F-A55A-4FB5-90EB-132894D58E66}|gestor_clients\\WPF-MVVM-SPA-Template.csproj|c:\\users\\omen\\onedrive - universitat de vic\\desenvolupament_d\u0027interficies\\pac1_interficies\\gestor_clients\\views\\afegirclientview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{660DA19F-A55A-4FB5-90EB-132894D58E66}|gestor_clients\\WPF-MVVM-SPA-Template.csproj|solutionrelative:gestor_clients\\views\\afegirclientview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{660DA19F-A55A-4FB5-90EB-132894D58E66}|gestor_clients\\WPF-MVVM-SPA-Template.csproj|c:\\users\\omen\\onedrive - universitat de vic\\desenvolupament_d\u0027interficies\\pac1_interficies\\gestor_clients\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{660DA19F-A55A-4FB5-90EB-132894D58E66}|gestor_clients\\WPF-MVVM-SPA-Template.csproj|solutionrelative:gestor_clients\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{660DA19F-A55A-4FB5-90EB-132894D58E66}|gestor_clients\\WPF-MVVM-SPA-Template.csproj|c:\\users\\omen\\onedrive - universitat de vic\\desenvolupament_d\u0027interficies\\pac1_interficies\\gestor_clients\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{660DA19F-A55A-4FB5-90EB-132894D58E66}|gestor_clients\\WPF-MVVM-SPA-Template.csproj|solutionrelative:gestor_clients\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{660DA19F-A55A-4FB5-90EB-132894D58E66}|gestor_clients\\WPF-MVVM-SPA-Template.csproj|c:\\users\\omen\\onedrive - universitat de vic\\desenvolupament_d\u0027interficies\\pac1_interficies\\gestor_clients\\viewmodels\\iniciviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{660DA19F-A55A-4FB5-90EB-132894D58E66}|gestor_clients\\WPF-MVVM-SPA-Template.csproj|solutionrelative:gestor_clients\\viewmodels\\iniciviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{660DA19F-A55A-4FB5-90EB-132894D58E66}|gestor_clients\\WPF-MVVM-SPA-Template.csproj|c:\\users\\omen\\onedrive - universitat de vic\\desenvolupament_d\u0027interficies\\pac1_interficies\\gestor_clients\\views\\clientsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{660DA19F-A55A-4FB5-90EB-132894D58E66}|gestor_clients\\WPF-MVVM-SPA-Template.csproj|solutionrelative:gestor_clients\\views\\clientsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{660DA19F-A55A-4FB5-90EB-132894D58E66}|gestor_clients\\WPF-MVVM-SPA-Template.csproj|c:\\users\\omen\\onedrive - universitat de vic\\desenvolupament_d\u0027interficies\\pac1_interficies\\gestor_clients\\views\\graficaview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{660DA19F-A55A-4FB5-90EB-132894D58E66}|gestor_clients\\WPF-MVVM-SPA-Template.csproj|solutionrelative:gestor_clients\\views\\graficaview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{660DA19F-A55A-4FB5-90EB-132894D58E66}|gestor_clients\\WPF-MVVM-SPA-Template.csproj|c:\\users\\omen\\onedrive - universitat de vic\\desenvolupament_d\u0027interficies\\pac1_interficies\\gestor_clients\\views\\iniciview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{660DA19F-A55A-4FB5-90EB-132894D58E66}|gestor_clients\\WPF-MVVM-SPA-Template.csproj|solutionrelative:gestor_clients\\views\\iniciview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{ADDF0BAE-6108-4934-ACFD-BD18FD18424D}|Proves DLL\\Proves DLL.csproj|c:\\users\\omen\\onedrive - universitat de vic\\desenvolupament_d\u0027interficies\\pac1_interficies\\proves dll\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{ADDF0BAE-6108-4934-ACFD-BD18FD18424D}|Proves DLL\\Proves DLL.csproj|solutionrelative:proves dll\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{660DA19F-A55A-4FB5-90EB-132894D58E66}|gestor_clients\\WPF-MVVM-SPA-Template.csproj|c:\\users\\omen\\onedrive - universitat de vic\\desenvolupament_d\u0027interficies\\pac1_interficies\\gestor_clients\\wpf-mvvm-spa-template.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{660DA19F-A55A-4FB5-90EB-132894D58E66}|gestor_clients\\WPF-MVVM-SPA-Template.csproj|solutionrelative:gestor_clients\\wpf-mvvm-spa-template.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{DD0FF7BE-6507-426A-8943-5031A3425C6A}|CustomControlsLib\\CustomControlsLib.csproj|c:\\users\\omen\\onedrive - universitat de vic\\desenvolupament_d\u0027interficies\\pac1_interficies\\customcontrolslib\\dnitextbox.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD0FF7BE-6507-426A-8943-5031A3425C6A}|CustomControlsLib\\CustomControlsLib.csproj|solutionrelative:customcontrolslib\\dnitextbox.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD0FF7BE-6507-426A-8943-5031A3425C6A}|CustomControlsLib\\CustomControlsLib.csproj|c:\\users\\omen\\onedrive - universitat de vic\\desenvolupament_d\u0027interficies\\pac1_interficies\\customcontrolslib\\emailtextbox.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD0FF7BE-6507-426A-8943-5031A3425C6A}|CustomControlsLib\\CustomControlsLib.csproj|solutionrelative:customcontrolslib\\emailtextbox.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD0FF7BE-6507-426A-8943-5031A3425C6A}|CustomControlsLib\\CustomControlsLib.csproj|c:\\users\\omen\\onedrive - universitat de vic\\desenvolupament_d\u0027interficies\\pac1_interficies\\customcontrolslib\\minlengthtextbox.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD0FF7BE-6507-426A-8943-5031A3425C6A}|CustomControlsLib\\CustomControlsLib.csproj|solutionrelative:customcontrolslib\\minlengthtextbox.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{660DA19F-A55A-4FB5-90EB-132894D58E66}|gestor_clients\\WPF-MVVM-SPA-Template.csproj|c:\\users\\omen\\onedrive - universitat de vic\\desenvolupament_d\u0027interficies\\pac1_interficies\\gestor_clients\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{660DA19F-A55A-4FB5-90EB-132894D58E66}|gestor_clients\\WPF-MVVM-SPA-Template.csproj|solutionrelative:gestor_clients\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{660DA19F-A55A-4FB5-90EB-132894D58E66}|gestor_clients\\WPF-MVVM-SPA-Template.csproj|c:\\users\\omen\\onedrive - universitat de vic\\desenvolupament_d\u0027interficies\\pac1_interficies\\gestor_clients\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{660DA19F-A55A-4FB5-90EB-132894D58E66}|gestor_clients\\WPF-MVVM-SPA-Template.csproj|solutionrelative:gestor_clients\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{660DA19F-A55A-4FB5-90EB-132894D58E66}|gestor_clients\\WPF-MVVM-SPA-Template.csproj|c:\\users\\omen\\onedrive - universitat de vic\\desenvolupament_d\u0027interficies\\pac1_interficies\\gestor_clients\\viewmodels\\clientsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{660DA19F-A55A-4FB5-90EB-132894D58E66}|gestor_clients\\WPF-MVVM-SPA-Template.csproj|solutionrelative:gestor_clients\\viewmodels\\clientsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{660DA19F-A55A-4FB5-90EB-132894D58E66}|gestor_clients\\WPF-MVVM-SPA-Template.csproj|c:\\users\\omen\\onedrive - universitat de vic\\desenvolupament_d\u0027interficies\\pac1_interficies\\gestor_clients\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{660DA19F-A55A-4FB5-90EB-132894D58E66}|gestor_clients\\WPF-MVVM-SPA-Template.csproj|solutionrelative:gestor_clients\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{660DA19F-A55A-4FB5-90EB-132894D58E66}|gestor_clients\\WPF-MVVM-SPA-Template.csproj|c:\\users\\omen\\onedrive - universitat de vic\\desenvolupament_d\u0027interficies\\pac1_interficies\\gestor_clients\\viewmodels\\afegirclientsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{660DA19F-A55A-4FB5-90EB-132894D58E66}|gestor_clients\\WPF-MVVM-SPA-Template.csproj|solutionrelative:gestor_clients\\viewmodels\\afegirclientsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{660DA19F-A55A-4FB5-90EB-132894D58E66}|gestor_clients\\WPF-MVVM-SPA-Template.csproj|c:\\users\\omen\\onedrive - universitat de vic\\desenvolupament_d\u0027interficies\\pac1_interficies\\gestor_clients\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{660DA19F-A55A-4FB5-90EB-132894D58E66}|gestor_clients\\WPF-MVVM-SPA-Template.csproj|solutionrelative:gestor_clients\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{660DA19F-A55A-4FB5-90EB-132894D58E66}|gestor_clients\\WPF-MVVM-SPA-Template.csproj|c:\\users\\omen\\onedrive - universitat de vic\\desenvolupament_d\u0027interficies\\pac1_interficies\\gestor_clients\\properties\\settings.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{660DA19F-A55A-4FB5-90EB-132894D58E66}|gestor_clients\\WPF-MVVM-SPA-Template.csproj|solutionrelative:gestor_clients\\properties\\settings.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{660DA19F-A55A-4FB5-90EB-132894D58E66}|gestor_clients\\WPF-MVVM-SPA-Template.csproj|c:\\users\\omen\\onedrive - universitat de vic\\desenvolupament_d\u0027interficies\\pac1_interficies\\gestor_clients\\clients_managment.csproj||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{660DA19F-A55A-4FB5-90EB-132894D58E66}|gestor_clients\\WPF-MVVM-SPA-Template.csproj|solutionrelative:gestor_clients\\clients_managment.csproj||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Omen\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-1818233453\\ClientView - Copia.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{660DA19F-A55A-4FB5-90EB-132894D58E66}|gestor_clients\\WPF-MVVM-SPA-Template.csproj|c:\\users\\omen\\onedrive - universitat de vic\\desenvolupament_d\u0027interficies\\pac1_interficies\\gestor_clients\\views\\clientsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{660DA19F-A55A-4FB5-90EB-132894D58E66}|gestor_clients\\WPF-MVVM-SPA-Template.csproj|solutionrelative:gestor_clients\\views\\clientsview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{660DA19F-A55A-4FB5-90EB-132894D58E66}|gestor_clients\\WPF-MVVM-SPA-Template.csproj|c:\\users\\omen\\onedrive - universitat de vic\\desenvolupament_d\u0027interficies\\pac1_interficies\\gestor_clients\\viewmodels\\ruletaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{660DA19F-A55A-4FB5-90EB-132894D58E66}|gestor_clients\\WPF-MVVM-SPA-Template.csproj|solutionrelative:gestor_clients\\viewmodels\\ruletaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{660DA19F-A55A-4FB5-90EB-132894D58E66}|gestor_clients\\WPF-MVVM-SPA-Template.csproj|c:\\users\\omen\\onedrive - universitat de vic\\desenvolupament_d\u0027interficies\\pac1_interficies\\gestor_clients\\viewmodels\\graficaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{660DA19F-A55A-4FB5-90EB-132894D58E66}|gestor_clients\\WPF-MVVM-SPA-Template.csproj|solutionrelative:gestor_clients\\viewmodels\\graficaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Omen\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-831059671\\WPF-MVVM-SPA-Template.csproj||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,55 +104,313 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "WPF-MVVM-SPA-Template",
-              "DocumentMoniker": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\WPF-MVVM-SPA-Template.csproj",
-              "RelativeDocumentMoniker": "gestor_clients\\WPF-MVVM-SPA-Template.csproj",
-              "ToolTip": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\WPF-MVVM-SPA-Template.csproj",
-              "RelativeToolTip": "gestor_clients\\WPF-MVVM-SPA-Template.csproj",
-              "ViewState": "AgIAACAAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 23,
+              "Title": "WPF-MVVM-SPA-Template.csproj",
+              "DocumentMoniker": "C:\\Users\\Omen\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-831059671\\WPF-MVVM-SPA-Template.csproj",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-831059671\\WPF-MVVM-SPA-Template.csproj",
+              "ToolTip": "C:\\Users\\Omen\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-831059671\\WPF-MVVM-SPA-Template.csproj",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-831059671\\WPF-MVVM-SPA-Template.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-18T17:39:00.248Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\App.xaml",
-              "RelativeDocumentMoniker": "gestor_clients\\App.xaml",
-              "ToolTip": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\App.xaml",
-              "RelativeToolTip": "gestor_clients\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-18T17:23:36.394Z",
+              "WhenOpened": "2026-03-19T13:11:15.458Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "gestor_clients\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\MainWindow.xaml",
-              "RelativeToolTip": "gestor_clients\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-18T17:16:32.884Z",
+              "Title": "Option2View.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\Views\\Option2View.xaml.cs",
+              "RelativeDocumentMoniker": "gestor_clients\\Views\\Option2View.xaml.cs",
+              "ToolTip": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\Views\\Option2View.xaml.cs",
+              "RelativeToolTip": "gestor_clients\\Views\\Option2View.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T12:00:18.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "GraficaViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\ViewModels\\GraficaViewModel.cs",
+              "RelativeDocumentMoniker": "gestor_clients\\ViewModels\\GraficaViewModel.cs",
+              "ToolTip": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\ViewModels\\GraficaViewModel.cs",
+              "RelativeToolTip": "gestor_clients\\ViewModels\\GraficaViewModel.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAIBQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T12:01:37.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "RuletaViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\ViewModels\\RuletaViewModel.cs",
+              "RelativeDocumentMoniker": "gestor_clients\\ViewModels\\RuletaViewModel.cs",
+              "ToolTip": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\ViewModels\\RuletaViewModel.cs",
+              "RelativeToolTip": "gestor_clients\\ViewModels\\RuletaViewModel.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T12:00:52.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CLientsView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\Views\\CLientsView.xaml.cs",
+              "RelativeDocumentMoniker": "gestor_clients\\Views\\CLientsView.xaml.cs",
+              "ToolTip": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\Views\\CLientsView.xaml.cs",
+              "RelativeToolTip": "gestor_clients\\Views\\CLientsView.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T12:00:48.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ClientView - Copia.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Omen\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-1818233453\\ClientView - Copia.xaml.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-1818233453\\ClientView - Copia.xaml.cs",
+              "ToolTip": "C:\\Users\\Omen\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-1818233453\\ClientView - Copia.xaml.cs",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\CopilotBaseline\\Deleted\\-1818233453\\ClientView - Copia.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T12:00:44.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Clients_Managment.csproj",
+              "DocumentMoniker": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\Clients_Managment.csproj",
+              "RelativeDocumentMoniker": "gestor_clients\\Clients_Managment.csproj",
+              "ToolTip": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\Clients_Managment.csproj",
+              "RelativeToolTip": "gestor_clients\\Clients_Managment.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-19T11:46:41.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\Models\\Client.cs",
+              "RelativeDocumentMoniker": "gestor_clients\\Models\\Client.cs",
+              "ToolTip": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\Models\\Client.cs",
+              "RelativeToolTip": "gestor_clients\\Models\\Client.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T11:45:58.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AfegirClientsViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\ViewModels\\AfegirClientsViewModel.cs",
+              "RelativeDocumentMoniker": "gestor_clients\\ViewModels\\AfegirClientsViewModel.cs",
+              "ToolTip": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\ViewModels\\AfegirClientsViewModel.cs",
+              "RelativeToolTip": "gestor_clients\\ViewModels\\AfegirClientsViewModel.cs",
+              "ViewState": "AgIAAJoAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T11:45:56.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IniciViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\ViewModels\\IniciViewModel.cs",
+              "RelativeDocumentMoniker": "gestor_clients\\ViewModels\\IniciViewModel.cs",
+              "ToolTip": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\ViewModels\\IniciViewModel.cs",
+              "RelativeToolTip": "gestor_clients\\ViewModels\\IniciViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T11:45:53.059Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "gestor_clients\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\MainWindow.xaml",
+              "RelativeToolTip": "gestor_clients\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-19T11:45:35.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IniciView.xaml",
+              "DocumentMoniker": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\Views\\IniciView.xaml",
+              "RelativeDocumentMoniker": "gestor_clients\\Views\\IniciView.xaml",
+              "ToolTip": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\Views\\IniciView.xaml",
+              "RelativeToolTip": "gestor_clients\\Views\\IniciView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-19T11:46:02.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AfegirClientView.xaml",
+              "DocumentMoniker": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\Views\\AfegirClientView.xaml",
+              "RelativeDocumentMoniker": "gestor_clients\\Views\\AfegirClientView.xaml",
+              "ToolTip": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\Views\\AfegirClientView.xaml",
+              "RelativeToolTip": "gestor_clients\\Views\\AfegirClientView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-19T11:46:06.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GraficaView.xaml",
+              "DocumentMoniker": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\Views\\GraficaView.xaml",
+              "RelativeDocumentMoniker": "gestor_clients\\Views\\GraficaView.xaml",
+              "ToolTip": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\Views\\GraficaView.xaml",
+              "RelativeToolTip": "gestor_clients\\Views\\GraficaView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-19T11:46:10.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CLientsView.xaml",
+              "DocumentMoniker": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\Views\\CLientsView.xaml",
+              "RelativeDocumentMoniker": "gestor_clients\\Views\\CLientsView.xaml",
+              "ToolTip": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\Views\\CLientsView.xaml",
+              "RelativeToolTip": "gestor_clients\\Views\\CLientsView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-03-19T11:46:16.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\Proves DLL\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Proves DLL\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\Proves DLL\\MainWindow.xaml",
               "RelativeToolTip": "Proves DLL\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-13T19:26:11.322Z"
+              "WhenOpened": "2026-03-13T19:26:11.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Settings.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\Properties\\Settings.Designer.cs",
+              "RelativeDocumentMoniker": "gestor_clients\\Properties\\Settings.Designer.cs",
+              "ToolTip": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\Properties\\Settings.Designer.cs",
+              "RelativeToolTip": "gestor_clients\\Properties\\Settings.Designer.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBZwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T11:46:26.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "gestor_clients\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\MainWindow.xaml.cs",
+              "RelativeToolTip": "gestor_clients\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T11:45:41.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\App.xaml.cs",
+              "RelativeDocumentMoniker": "gestor_clients\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\App.xaml.cs",
+              "RelativeToolTip": "gestor_clients\\App.xaml.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAABRwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T11:45:38.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ClientsViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\ViewModels\\ClientsViewModel.cs",
+              "RelativeDocumentMoniker": "gestor_clients\\ViewModels\\ClientsViewModel.cs",
+              "ToolTip": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\ViewModels\\ClientsViewModel.cs",
+              "RelativeToolTip": "gestor_clients\\ViewModels\\ClientsViewModel.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T11:45:44.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\ViewModels\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "gestor_clients\\ViewModels\\MainViewModel.cs",
+              "ToolTip": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\gestor_clients\\ViewModels\\MainViewModel.cs",
+              "RelativeToolTip": "gestor_clients\\ViewModels\\MainViewModel.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T11:45:47.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DNITextBox.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\CustomControlsLib\\DNITextBox.xaml.cs",
+              "RelativeDocumentMoniker": "CustomControlsLib\\DNITextBox.xaml.cs",
+              "ToolTip": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\CustomControlsLib\\DNITextBox.xaml.cs",
+              "RelativeToolTip": "CustomControlsLib\\DNITextBox.xaml.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAwEcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T11:06:08.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MinLengthTextBox.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\CustomControlsLib\\MinLengthTextBox.xaml.cs",
+              "RelativeDocumentMoniker": "CustomControlsLib\\MinLengthTextBox.xaml.cs",
+              "ToolTip": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\CustomControlsLib\\MinLengthTextBox.xaml.cs",
+              "RelativeToolTip": "CustomControlsLib\\MinLengthTextBox.xaml.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T10:24:21.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EmailTextBox.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\CustomControlsLib\\EmailTextBox.xaml.cs",
+              "RelativeDocumentMoniker": "CustomControlsLib\\EmailTextBox.xaml.cs",
+              "ToolTip": "C:\\Users\\Omen\\OneDrive - Universitat de Vic\\Desenvolupament_d\u0027interficies\\PAC1_interficies\\CustomControlsLib\\EmailTextBox.xaml.cs",
+              "RelativeToolTip": "CustomControlsLib\\EmailTextBox.xaml.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAkwEcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T10:25:10.281Z",
+              "EditorCaption": ""
             }
           ]
         }

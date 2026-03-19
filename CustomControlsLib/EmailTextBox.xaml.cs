@@ -39,7 +39,7 @@ namespace CustomControlsLib
                 typeof(string), 
                 typeof(EmailTextBox), 
                 new PropertyMetadata(string.Empty));
-        
+
         public string TooltipMessage 
         { 
             get => (string)GetValue(TooltipMessageProperty); 
@@ -58,6 +58,7 @@ namespace CustomControlsLib
         {
             InitializeComponent();
             InnerTextBox.TextChanged += (s, e) => EmailText = InnerTextBox.Text;
+            TooltipMessage = "Introdueix un correu";
         }
         private static void OnEmailtextChanged(DependencyObject d,
         DependencyPropertyChangedEventArgs e)
@@ -68,11 +69,9 @@ namespace CustomControlsLib
             if (string.IsNullOrWhiteSpace(newEmail))
             {
                 control.ControlBorder.BorderBrush = Brushes.Gray;
-                control.TooltipMessage = "Introdueix un correu";
                 
-                return;
             }
-            if (isValid)
+            else if (isValid)
             {
                 control.ControlBorder.BorderBrush = Brushes.Green;
                 control.TooltipMessage = "Email vàlid";

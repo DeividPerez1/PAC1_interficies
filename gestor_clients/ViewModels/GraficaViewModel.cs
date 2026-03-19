@@ -2,11 +2,11 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Windows.Input;
-using WPF_MVVM_SPA_Template.Models;
+using Clients_Managment.Models;
 using LiveCharts;
 using LiveCharts.Wpf;
 
-namespace WPF_MVVM_SPA_Template.ViewModels
+namespace Clients_Managment.ViewModels
 {
     public class GraficaViewModel : INotifyPropertyChanged
     {

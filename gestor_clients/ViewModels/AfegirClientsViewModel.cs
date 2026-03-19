@@ -2,11 +2,11 @@
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Linq;
-using WPF_MVVM_SPA_Template.Models;
+using Clients_Managment.Models;
 using System;
 
 
-namespace WPF_MVVM_SPA_Template.ViewModels
+namespace Clients_Managment.ViewModels
 {
     public class AfegirClientsViewModel : INotifyPropertyChanged
     {
@@ -152,7 +152,7 @@ namespace WPF_MVVM_SPA_Template.ViewModels
 
 
             // 2. IMPORTANT Guardar al fitxer perquè no es perdi en tancar
-            WPF_MVVM_SPA_Template.Services.XmlService.Guardar(llistaGlobal);
+            Clients_Managment.Services.XmlService.Guardar(llistaGlobal);
 
             _mainViewModel.SelectedView = "Option1";
         }

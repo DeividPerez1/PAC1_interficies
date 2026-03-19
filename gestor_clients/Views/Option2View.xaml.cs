@@ -1,6 +1,6 @@
 ﻿using System.Windows.Controls;
 
-namespace WPF_MVVM_SPA_Template.Views
+namespace Clients_Managment.Views
 {
     // Vista UserControl enlloc de Window ja que no necessitem una finestra (SPA)
     public partial class Option2View : UserControl

@@ -2,7 +2,7 @@
 using System.Windows.Controls;
 
 
-namespace WPF_MVVM_SPA_Template.Views
+namespace Clients_Managment.Views
 {
     /// <summary>
     /// Lógica de interacción para UserControl1.xaml
@@ -14,6 +14,6 @@ namespace WPF_MVVM_SPA_Template.Views
             InitializeComponent();
         }
 
-     
+
     }
 }

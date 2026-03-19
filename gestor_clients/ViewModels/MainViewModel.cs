@@ -1,11 +1,11 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using WPF_MVVM_SPA_Template.Views;
-using WPF_MVVM_SPA_Template.Services; 
+using Clients_Managment.Views;
+using Clients_Managment.Services; 
 using System.Collections.ObjectModel;  
-using WPF_MVVM_SPA_Template.Models;
+using Clients_Managment.Models;
 
-namespace WPF_MVVM_SPA_Template.ViewModels
+namespace Clients_Managment.ViewModels
 {
     public class MainViewModel : INotifyPropertyChanged
     {

@@ -1,11 +1,11 @@
 ﻿using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using WPF_MVVM_SPA_Template.Models;
+using Clients_Managment.Models;
 using System.Windows; 
 using System.Windows.Input; 
 
-namespace WPF_MVVM_SPA_Template.ViewModels
+namespace Clients_Managment.ViewModels
 {
     
     public class ClientsViewModel : INotifyPropertyChanged
@@ -88,7 +88,7 @@ namespace WPF_MVVM_SPA_Template.ViewModels
                     {
                         Clients.Remove(clientAEliminar);
                     }
-                    WPF_MVVM_SPA_Template.Services.XmlService.Guardar(_mainViewModel.Clients);
+                Clients_Managment.Services.XmlService.Guardar(_mainViewModel.Clients);
                 }
             });
 

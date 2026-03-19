@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/gestor_clients/">
+    <Project Path="gestor_clients/Clients_Managment.csproj" />
+  </Folder>
+  <Project Path="CustomControlsLib/CustomControlsLib.csproj" />
+  <Project Path="Proves DLL/Proves DLL.csproj" />
+</Solution>

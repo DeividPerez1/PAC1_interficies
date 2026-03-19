@@ -1,7 +1,7 @@
 ﻿using System.Windows;
-using WPF_MVVM_SPA_Template.ViewModels;
+using Clients_Managment.ViewModels;
 
-namespace WPF_MVVM_SPA_Template
+namespace Clients_Managment
 {
     //Finestra principal de l'aplicació (SPA Container)
     public partial class MainWindow : Window

@@ -56,6 +56,7 @@ namespace CustomControlsLib
         {
             InitializeComponent();
             InnerTextBox.TextChanged += (s, e) => DNIText = InnerTextBox.Text; //Marti esto és lo que tu has llamado Internal és lo mismo
+            TooltipMessage = "Indtrodueix un DNI";
         }
 
         private static void OnDNItextChanged(DependencyObject d,
@@ -68,11 +69,9 @@ namespace CustomControlsLib
             if (string.IsNullOrWhiteSpace(newDNI))
             {
                 control.ControlBorder.BorderBrush = Brushes.Gray;
-                control.TooltipMessage = "Indtrodueix un DNI";
-                
-                return;
+                               
             }
-            if (isValid)
+            else if (isValid)
             {
                 control.ControlBorder.BorderBrush = Brushes.Green;
                 control.TooltipMessage = "DNI vàlid";

@@ -1,9 +1,9 @@
 ﻿using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using WPF_MVVM_SPA_Template.Models;
+using Clients_Managment.Models;
 
-namespace WPF_MVVM_SPA_Template.ViewModels
+namespace Clients_Managment.ViewModels
 {
     //Els ViewModels deriven de INotifyPropertyChanged per poder fer Binding de propietats
     class Option2ViewModel : INotifyPropertyChanged
