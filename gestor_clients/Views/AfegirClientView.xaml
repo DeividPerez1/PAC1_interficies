@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:controles="clr-namespace:CustomControlsLib;assembly=CustomControlsLib"
         xmlns:local="clr-namespace:Clients_Managment.Views"
         mc:Ignorable="d"
         d:DesignHeight="450" d:DesignWidth="600" Background="White">
@@ -40,16 +41,18 @@
                      Text="{Binding NewClient.last_name, UpdateSourceTrigger=PropertyChanged}"/>
 
             <Label Grid.Row="3" Grid.Column="0" Content="DNI:" Style="{StaticResource ModernLabelStyle}"/>
-            <TextBox Grid.Row="3" Grid.Column="1" Style="{StaticResource ModernTextBoxStyle}"
-                     Text="{Binding NewClient.DNI, UpdateSourceTrigger=PropertyChanged}"/>
+            <controles:DNITextBox Grid.Row="3" Grid.Column="1"
+                     DNIText="{Binding NewClient.DNI, UpdateSourceTrigger=PropertyChanged}"/>
+            
 
-            <Label Grid.Row="4" Grid.Column="0" Content="Email:" Style="{StaticResource ModernLabelStyle}"/>
-            <TextBox Grid.Row="4" Grid.Column="1" Style="{StaticResource ModernTextBoxStyle}"
-                     Text="{Binding NewClient.Email, UpdateSourceTrigger=PropertyChanged}"/>
+            <Label Grid.Row="4" Grid.Column="0" Content="Email:" />
+            <controles:EmailTextBox Grid.Row="4" Grid.Column="1" 
+                     EmailText="{Binding NewClient.Email, UpdateSourceTrigger=PropertyChanged}"/>
 
             <Label Grid.Row="5" Grid.Column="0" Content="Telèfon:" Style="{StaticResource ModernLabelStyle}"/>
-            <TextBox Grid.Row="5" Grid.Column="1" Style="{StaticResource ModernTextBoxStyle}"
-                     Text="{Binding NewClient.Tlf, UpdateSourceTrigger=PropertyChanged}"/>
+            <controles:MinLengthTextBox Grid.Row="5" Grid.Column="1"
+                     TextValue="{Binding NewClient.Tlf, UpdateSourceTrigger=PropertyChanged}"
+                     MinLength="9"/>
 
             <Label Grid.Row="6" Grid.Column="0" Content="Data Alta:" Style="{StaticResource ModernLabelStyle}"/>
             <DatePicker Grid.Row="6" Grid.Column="1" Style="{StaticResource ModernDatePickerStyle}"
