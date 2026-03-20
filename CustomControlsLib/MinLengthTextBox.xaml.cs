@@ -59,8 +59,8 @@ namespace CustomControlsLib
 
             if (string.IsNullOrEmpty(TextValue))
             {
-                InnerTextBox.BorderBrush = Brushes.Gray;
-                InnerTextBox.BorderThickness = new Thickness(1);
+                InnerTextBox.ClearValue(TextBox.BorderBrushProperty);
+                InnerTextBox.ClearValue(TextBox.BorderThicknessProperty);
                 TooltipMessage = "Aquest camp és obligatori";
             }
             else if (!IsValid(TextValue, MinLength))
