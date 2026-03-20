@@ -57,6 +57,8 @@ namespace CustomControlsLib
             InitializeComponent();
             InnerTextBox.TextChanged += (s, e) => DNIText = InnerTextBox.Text; //Marti esto és lo que tu has llamado Internal és lo mismo
             TooltipMessage = "Indtrodueix un DNI";
+            InnerTextBox.BorderBrush = Brushes.Gray;
+            InnerTextBox.BorderThickness = new Thickness(1);
         }
 
         private static void OnDNItextChanged(DependencyObject d,

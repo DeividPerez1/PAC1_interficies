@@ -59,7 +59,7 @@ namespace CustomControlsLib
 
         private void Validate()
         {
-            if (InnerTextBox == null) return;
+            //if (InnerTextBox == null) return;
 
             if (string.IsNullOrEmpty(TextValue))
             {

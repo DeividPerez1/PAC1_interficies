@@ -59,6 +59,7 @@ namespace CustomControlsLib
             InitializeComponent();
             InnerTextBox.TextChanged += (s, e) => EmailText = InnerTextBox.Text;
             TooltipMessage = "Introdueix un correu";
+            InnerTextBox.BorderThickness = new Thickness(1);
         }
         private static void OnEmailtextChanged(DependencyObject d,
         DependencyPropertyChangedEventArgs e)
