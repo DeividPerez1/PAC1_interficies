@@ -1,19 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Policy;
-using System.Text;
+﻿
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
+
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+
 
 namespace CustomControlsLib
 {
@@ -67,6 +59,15 @@ namespace CustomControlsLib
             var control = (EmailTextBox)d;
             string newEmail = (string)e.NewValue;
             bool isValid = IsValid(newEmail);
+
+            if (control.InnerTextBox.Text != newEmail)
+            {
+                control.InnerTextBox.Text = newEmail;
+            }
+
+
+
+
             if (string.IsNullOrWhiteSpace(newEmail))
             {
                 control.InnerTextBox.ClearValue(TextBox.BorderBrushProperty);

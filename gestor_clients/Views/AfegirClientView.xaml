@@ -35,12 +35,12 @@
             <Label Grid.Row="1" Grid.Column="0" Content="Nom:" Style="{StaticResource ModernLabelStyle}"/>
             <controles:MinLengthTextBox Grid.Row="1" Grid.Column="1"
                      TextValue="{Binding NewClient.Name, UpdateSourceTrigger=PropertyChanged}"
-                     MinLength="2"/>
+                     MinLength="3"/>
 
             <Label Grid.Row="2" Grid.Column="0" Content="Cognoms:" Style="{StaticResource ModernLabelStyle}"/>
             <controles:MinLengthTextBox Grid.Row="2" Grid.Column="1"
                      TextValue="{Binding NewClient.last_name, UpdateSourceTrigger=PropertyChanged}"
-                     MinLength="2"/>
+                     MinLength="3"/>
 
             <Label Grid.Row="3" Grid.Column="0" Content="DNI:" Style="{StaticResource ModernLabelStyle}"/>
             <controles:DNITextBox Grid.Row="3" Grid.Column="1"

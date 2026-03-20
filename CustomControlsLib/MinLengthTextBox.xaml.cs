@@ -1,13 +1,9 @@
-using System.Text;
+
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
+
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+
 
 namespace CustomControlsLib
 {
@@ -65,13 +61,13 @@ namespace CustomControlsLib
             {
                 InnerTextBox.BorderBrush = Brushes.Gray;
                 InnerTextBox.BorderThickness = new Thickness(1);
-                TooltipMessage = "Camp buit";
+                TooltipMessage = "Aquest camp és obligatori";
             }
             else if (!IsValid(TextValue, MinLength))
             {
                 InnerTextBox.BorderBrush = Brushes.Red;
                 InnerTextBox.BorderThickness = new Thickness(2);
-                TooltipMessage = $"Error: Calen almenys {MinLength} caràcters.";
+                TooltipMessage = $"Calen almenys {MinLength} caràcters.";
             }
             else
             {
