@@ -53,7 +53,7 @@ namespace Clients_Managment.ViewModels
             Clients = XmlService.Carregar();   
            
             RuletaVM = new RuletaViewModel(this);
-
+ 
             Option1VM = new ClientsViewModel(this); 
             
             IniciVM = new IniciViewModel(this);

@@ -3,17 +3,21 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using Clients_Managment.Models;
 using System.Windows; 
-using System.Windows.Input; 
+using System.Windows.Input;
+using FastReport;
+using FastReport.Data;
+using FastReport.Export.PdfSimple;
+using System.Data;
+using System.Diagnostics;
 
 namespace Clients_Managment.ViewModels
 {
-    
     public class ClientsViewModel : INotifyPropertyChanged
     {
         private readonly MainViewModel _mainViewModel;
 
         public ObservableCollection<Client> Clients => _mainViewModel.Clients;
-
+            
         private Client _selectedClient;
         public Client SelectedClient
         {
@@ -26,6 +30,8 @@ namespace Clients_Managment.ViewModels
         public RelayCommand DelClientCommand { get; set; }
         public RelayCommand EditClientCommand { get; set; } 
         public RelayCommand VeureGraficaCommand { get; set; }
+
+        public RelayCommand InformeCommand { get; set; }
 
         public ClientsViewModel(MainViewModel mainViewModel)
         {
@@ -47,7 +53,8 @@ namespace Clients_Managment.ViewModels
                             ChartLabels = new string [] {"Lunes","martes", "viernes"}
             });
             */
-        
+            InformeCommand = new RelayCommand(x => Informe());
+
             AddClientCommand = new RelayCommand(x =>
             {
            
@@ -103,7 +110,37 @@ namespace Clients_Managment.ViewModels
             }
             else
             {
-                MessageBox.Show("Por favor, selecciona un cliente de la lista primero.");
+                MessageBox.Show("Selecciona un client de la llista primer.");
+            }
+        }
+        DataSet dataSet = new DataSet();
+        private void Informe()
+        {
+            try
+            {
+                using (Report report = new Report())
+                { 
+                    report.Load("InformeClient.frx");
+                    report.RegisterData(dataSet, "Clients");
+
+                    var datasource = report.GetDataSource("Clients");
+                    if (datasource !=null)
+                        datasource.Enabled = true;
+                    if (report.Prepare())
+                    {
+                        using (PDFSimpleExport pdfExport = new PDFSimpleExport())
+                        { 
+                            report.Export(pdfExport, "Informe_Clients.pdf");
+                            Process.Start(new ProcessStartInfo("Informe_Clients.pdf") { UseShellExecute = true });
+                        }
+                        
+                    }
+                    MessageBox.Show("Informe exportat com a PDF amb èxit!");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error en generar l'informe: {ex.Message}");
             }
         }
 
