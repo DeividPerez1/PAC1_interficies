@@ -38,14 +38,7 @@ namespace Clients_Managment.ViewModels
             _mainViewModel = mainViewModel;
 
             // Dades de prova inicials
-            
-            Clients.Add(new Client { Id = 11, DNI = "12345678Z",
-                            Name = "David", last_name = "juanche",
-                            Email = "pablomotos@gmail.com", Tlf = 66777,
-                            date = "05/7/26", ChartValues = new double[] { 5,15,60},
-                            ChartLabels = new string [] {"Lunes","martes","viernes"}
-            });
-
+       
 
             //Clients.Add(new Client { Id = 2, DNI = "44443",
             //                Name = "Pablo", last_name = "tictuc",

@@ -6,57 +6,60 @@ using Clients_Managment.Models;
 
 namespace Clients_Managment.Services
 {
-    
     public static class XmlService
     {
-        // Nom del fitxer que es crearà a la carpeta del projecte
-        private static string fitxerDades = "clients_guardats.xml";
+        // --- NOU MÈTODE PER CALCULAR LA RUTA ---
+        // Calcula la ruta cap a l'arrel del projecte, fora de la carpeta 'bin'
+        private static string ObtenirRutaFitxer()
+        {
+            // Agafem la ruta d'on s'està executant (.exe)
+            string directoriExe = AppDomain.CurrentDomain.BaseDirectory;
+
+            // Pugem 3 nivells: \net8.0-windows\ -> \Debug\ -> \bin\ -> Arrel del projecte
+            string directoriProjecte = Path.GetFullPath(Path.Combine(directoriExe, @"..\..\..\"));
+
+            // Unim la ruta del projecte amb el nom de l'arxiu
+            return Path.Combine(directoriProjecte, "clients_guardats.xml");
+        }
 
         // --- MÈTODE PER GUARDAR ---
-        // Aquesta funció agafa els clients i els escriu a l'XML
         public static void Guardar(ObservableCollection<Client> llista)
         {
+            string fitxerDades = ObtenirRutaFitxer(); // Cridem la ruta bona
+
             try
             {
-                // Creem el traductor (Serializer)
                 XmlSerializer xmlTrans = new XmlSerializer(typeof(ObservableCollection<Client>));
 
-                // Obrim el canal d'escriptura cap al fitxer
                 using (StreamWriter sw = new StreamWriter(fitxerDades))
                 {
-                    // Traduïm la llista a text XML i la guardem
                     xmlTrans.Serialize(sw, llista);
                 }
             }
             catch (Exception ex)
             {
-                // Si hi ha un error ens avisa per pantalla
                 System.Windows.MessageBox.Show("Error al guardar l'XML: " + ex.Message);
             }
         }
 
         // --- MÈTODE PER CARREGAR ---
-        // Aquesta funció llegeix el fitxer XML i ens torna la llista de clients
         public static ObservableCollection<Client> Carregar()
         {
-            // Si el fitxer no existeix ens torna una llista buida
+            string fitxerDades = ObtenirRutaFitxer(); // Cridem la ruta bona
+
             if (!File.Exists(fitxerDades)) return new ObservableCollection<Client>();
 
             try
             {
-                // Preparem el traductor per a la lectura
                 XmlSerializer xmlTrans = new XmlSerializer(typeof(ObservableCollection<Client>));
 
-                // Obrim el canal de lectura del fitxer
                 using (StreamReader sr = new StreamReader(fitxerDades))
                 {
-                    // Convertim el text de l'XML de nou a objectes 'Client'
                     return (ObservableCollection<Client>)xmlTrans.Deserialize(sr);
                 }
             }
             catch
             {
-                // Si el fitxer està trencat, tornem una llista buida per no bloquejar l'app
                 return new ObservableCollection<Client>();
             }
         }
