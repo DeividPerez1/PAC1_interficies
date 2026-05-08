@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="05/08/2026 16:30:00" ReportInfo.Modified="05/08/2026 17:03:14" ReportInfo.CreatorVersion="2025.1.0.0">
+  <Styles>
+    <Style Name="Header" Fill.Color="21, 32, 102" TextFill.Color="White" Font="Segoe UI, 10pt, style=Bold"/>
+    <Style Name="EvenStyle" Fill.Color="WhiteSmoke" Font="Segoe UI, 9pt"/>
+    <Style Name="DataStyle" Font="Segoe UI, 9pt"/>
+  </Styles>
+  <Dictionary>
+    <XmlDataConnection Name="Connection" ConnectionString="rijcmlqYr2rXqA11BDtX8CZ2Byztr+rF6PjtKPHt+mzumoot9nngqeHcoSUaiW6daTGhIp86+vNLQE5xAsFpqiCgn1t9MSoK5hiQy/VuwtkxO5+o3+8jO4cC6opozX205lw2hxEQRRCgSGnizV1W7ZQEkxpK5TX3WgI32Ln8+5iAarFaaKg3FHNLa1gk2EpM+yV8LES4pOjPYi/EuiMUZeg5idXrn6NPAGnh7DRXtmHcSihtYU=">
+      <TableDataSource Name="Client1" DataType="System.Int32" Enabled="true" TableName="Client">
+        <Column Name="Id" DataType="System.String"/>
+        <Column Name="DNI" DataType="System.String"/>
+        <Column Name="Name" DataType="System.String"/>
+        <Column Name="last_name" DataType="System.String"/>
+        <Column Name="Email" DataType="System.String"/>
+        <Column Name="Tlf" DataType="System.String"/>
+        <Column Name="date" DataType="System.String"/>
+        <Column Name="Client_Id" DataType="System.Int32"/>
+      </TableDataSource>
+    </XmlDataConnection>
+    <BusinessObjectDataSource Name="Client" ReferenceName="Client" DataType="System.Int32" Enabled="true">
+      <Column Name="DNI" DataType="System.String"/>
+      <Column Name="Name" DataType="System.String"/>
+      <Column Name="last_name" DataType="System.String"/>
+      <Column Name="Email" DataType="System.String"/>
+      <Column Name="Phone" DataType="System.String"/>
+      <Column Name="date" DataType="System.DateTime"/>
+    </BusinessObjectDataSource>
+    <Relation Name="ChartValues_double" ParentDataSource="null" ChildDataSource="null" ParentColumns="ChartValues_Id" ChildColumns="ChartValues_Id" Enabled="true"/>
+    <Relation Name="ChartLabels_string" ParentDataSource="null" ChildDataSource="null" ParentColumns="ChartLabels_Id" ChildColumns="ChartLabels_Id" Enabled="true"/>
+    <Relation Name="Client_ChartValues" ParentDataSource="Client1" ChildDataSource="null" ParentColumns="Client_Id" ChildColumns="Client_Id" Enabled="true"/>
+    <Relation Name="Client_ChartLabels" ParentDataSource="Client1" ChildDataSource="null" ParentColumns="Client_Id" ChildColumns="Client_Id" Enabled="true"/>
+  </Dictionary>
+  <ReportPage Name="Page1" Watermark.Font="Arial, 60pt">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="75.6">
+      <ShapeObject Name="ShapeHeader" Width="718.2" Height="56.7" Fill.Color="21, 32, 102"/>
+      <TextObject Name="txtTitulo" Left="18.9" Top="9.45" Width="400" Height="37.8" Text="INFORME DE CLIENTES" VertAlign="Center" Font="Segoe UI, 18pt, style=Bold" TextFill.Color="White"/>
+      <TextObject Name="txtFechaEmision" Left="500" Top="18.9" Width="200" Height="18.9" Text="Emitido: [Date]" HorzAlign="Right" VertAlign="Center" Font="Segoe UI, 9pt" TextFill.Color="White"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Top="79.6" Width="718.2" Height="28.35">
+      <TextObject Name="lblDNI" Width="94.5" Height="28.35" Text="DNI" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt" Style="Header"/>
+      <TextObject Name="lblNom" Left="94.5" Width="200" Height="28.35" Text="Nombre y Apellidos" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt" Style="Header"/>
+      <TextObject Name="lblMail" Left="294.5" Width="180.1" Height="28.35" Text="Email" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt" Style="Header"/>
+      <TextObject Name="lblTel" Left="474.6" Width="113.4" Height="28.35" Text="Teléfono" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt" Style="Header"/>
+      <TextObject Name="lblAlta" Left="588" Width="130.2" Height="28.35" Text="Fecha Alta" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt" Style="Header"/>
+    </PageHeaderBand>
+    <DataBand Name="DataClients" Top="111.95" Width="718.2" Height="28.35" EvenStyle="EvenStyle" DataSource="Client1">
+      <TextObject Name="datDNI" Width="94.5" Height="28.35" Border.Lines="All" Border.Color="LightGray" Text="[Client1.DNI]" VertAlign="Center" Font="Arial, 10pt" Style="DataStyle"/>
+      <TextObject Name="datNom" Left="94.5" Width="200" Height="28.35" Border.Lines="All" Border.Color="LightGray" Text="[Client1.Name] [Client1.last_name]" VertAlign="Center" Font="Arial, 10pt" Style="DataStyle"/>
+      <TextObject Name="datMail" Left="294.5" Width="180.1" Height="28.35" Border.Lines="All" Border.Color="LightGray" Text="[Client1.Email]" VertAlign="Center" Font="Arial, 10pt" Style="DataStyle"/>
+      <TextObject Name="datTel" Left="474.6" Width="113.4" Height="28.35" Border.Lines="All" Border.Color="LightGray" Text="[Client1.Tlf]" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt" Style="DataStyle"/>
+      <TextObject Name="datAlta" Left="588" Width="130.2" Height="28.35" Border.Lines="All" Border.Color="LightGray" Text="[Client1.date]" Format="Date" Format.Format="d" HorzAlign="Center" VertAlign="Center" Font="Arial, 10pt" Style="DataStyle"/>
+    </DataBand>
+    <ReportSummaryBand Name="ReportSummary1" Top="144.3" Width="718.2" Height="37.8"/>
+  </ReportPage>
+</Report>
